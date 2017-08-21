@@ -5,13 +5,15 @@
   "dependencies": {
     "react": "^16.0.0-alpha.12",
     "react-dom": "^16.0.0-alpha.12",
-    "react-scripts": "1.0.10"
+    "react-scripts": "1.0.10",
+    "styled-components": "^2.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint:css": "stylelint './src/**/*.js'"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
@@ -19,6 +21,9 @@
     "eslint-loader": "^1.8.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.0.1",
-    "eslint-plugin-react": "^7.1.0"
+    "eslint-plugin-react": "^7.1.0",
+    "stylelint": "^8.0.0",
+    "stylelint-config-standard": "^17.0.0",
+    "stylelint-processor-styled-components": "^0.3.0"
   }
 }
