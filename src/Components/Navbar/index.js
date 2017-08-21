@@ -12,6 +12,8 @@ grid-template-columns: ${size} auto ${size};
 grid-template-rows: ${size} auto ${size};
 width: 100%;
 height: 100%;
+padding: 2rem;
+box-sizing: border-box;
 `
 
 export default () => (
@@ -37,25 +39,5 @@ export default () => (
       gridRow={3}
       word="Education"
     />
-    {/* <Word
-      word="Contact Me"
-      top={padding}
-      left={padding}
-    />
-    <Word
-      word="Projects"
-      top={padding}
-      right={padding}
-    />
-    <Word
-      word="Experience"
-      right={padding}
-      bottom={padding}
-    />
-    <Word
-      word="Education"
-      bottom={padding}
-      left={padding}
-    /> */}
   </Grid>
 )
