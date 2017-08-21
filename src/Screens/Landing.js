@@ -2,11 +2,10 @@ import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
 import theme from '../theme'
+import { Navbar } from '../Components'
 
 export default () => (
-  <ThemeProvider theme={theme}>
-    <div>
-      asdf
-    </div>
+  <ThemeProvider theme={{}}>
+    <Navbar />
   </ThemeProvider>
 )

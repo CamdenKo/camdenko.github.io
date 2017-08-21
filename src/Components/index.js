@@ -1,1 +1,1 @@
-export { default as default } from './App.js';
+export { default as Navbar } from './Navbar'
