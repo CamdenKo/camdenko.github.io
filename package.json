@@ -13,7 +13,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint:css": "stylelint './src/**/*.js'"
+    "lint:css": "stylelint './src/**/*.js'",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
@@ -24,6 +26,9 @@
     "eslint-plugin-react": "^7.1.0",
     "stylelint": "^8.0.0",
     "stylelint-config-standard": "^17.0.0",
-    "stylelint-processor-styled-components": "^0.3.0"
+    "stylelint-processor-styled-components": "^0.3.0",
+    "@storybook/react": "^3.2.8",
+    "@storybook/addon-actions": "^3.2.6",
+    "@storybook/addon-links": "^3.2.6"
   }
 }
