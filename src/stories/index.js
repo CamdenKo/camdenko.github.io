@@ -6,6 +6,7 @@ import { linkTo } from '@storybook/addon-links';
 
 import {
   Circle,
+  X,
 } from '../Components'
 
 storiesOf('Shapes', module)
@@ -15,3 +16,4 @@ storiesOf('Shapes', module)
     </div>
   ))
   .add('circle', () => <Circle />)
+  .add('X', () => <X />)
