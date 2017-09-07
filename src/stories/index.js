@@ -1,6 +1,9 @@
 import React from 'react';
-
-import { storiesOf } from '@storybook/react';
+import { ThemeProvider } from 'styled-components'
+import {
+  storiesOf,
+  addDecorator,
+} from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
@@ -9,6 +12,13 @@ import {
   X,
   CircleWithLines,
 } from '../Components'
+import theme from '../theme'
+
+addDecorator(story => (
+  <ThemeProvider theme={theme}>
+    {story()}
+  </ThemeProvider>
+))
 
 storiesOf('Atoms/Shapes', module)
   .addDecorator(story => (
