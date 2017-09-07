@@ -9,6 +9,7 @@ const Container = styled.div`
   line-height: 98px;
   text-align: center;
   font-family: helvetica;
+  font-weight: 600;
 `
 
 export default () => (
