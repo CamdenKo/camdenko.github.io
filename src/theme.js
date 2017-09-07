@@ -1,8 +1,13 @@
 import { css } from 'styled-components'
 
 export default {
-  main: 'red',
+  red: 'FF0773',
   yellow: 'FFF86A',
+  purple: '8B56FF',
+  black: 'black',
+  white: 'white',
+  primaryFontFamily: 'Raleway',
+  secondaryFontFamily: 'Open Sans',
 }
 
 const sizes = {
