@@ -8,16 +8,17 @@ const Circle = styled.div`
   width: 500px;
   background: linear-gradient(
     to bottom,
-    ${props => props.theme.yellow},
-    ${props => props.theme.yellow} 50%,
-    ${props => props.theme.purple} 50%,
-    ${props => props.theme.purple}
+    ${({ theme }) => theme.yellow},
+    ${({ theme }) => theme.yellow} 60%,
+    ${({ theme }) => theme.purple} 40%,
+    ${({ theme }) => theme.purple}
   );
   display: flex;
   border-radius: 500px;
   overflow: hidden;
   padding-top: ${BoxSpacing};
   box-sizing: border-box;
+  background-size: 100% 50px;
 `
 export default () => (
   <Circle />
