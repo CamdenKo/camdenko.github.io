@@ -1,9 +1,9 @@
 import { css } from 'styled-components'
 
 export default {
-  red: 'FF0773',
-  yellow: 'FFF86A',
-  purple: '8B56FF',
+  red: '#FF0773',
+  yellow: '#FFF86A',
+  purple: '#8B56FF',
   black: 'black',
   white: 'white',
   primaryFontFamily: 'Raleway',
