@@ -12,6 +12,7 @@ import {
   X,
   CircleWithLines,
   Title,
+  Subtitle,
 } from '../Components'
 import theme from '../theme'
 
@@ -33,3 +34,8 @@ storiesOf('Atoms/Shapes', module)
 
 storiesOf('Atoms/Text', module)
   .add('Title', () => <Title>Camden Ko</Title>)
+  .add('Subtitle', () => (
+    <div style={{ backgroundColor: theme.purple }}>
+      <Subtitle>Fullstack Developer</Subtitle>
+    </div>
+  ))
