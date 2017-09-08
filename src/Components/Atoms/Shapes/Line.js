@@ -7,6 +7,7 @@ const Line = styled.div`
   height: 100%;
   width: 5px;
   box-shadow: 5px 0 0 0 ${({ theme }) => theme.black};
+  border-radius: 10px;
 `
 
 export default () => (
