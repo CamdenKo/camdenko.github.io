@@ -15,6 +15,7 @@ import {
   Subtitle,
   BodyText,
   SecondaryTitle,
+  Line,
   NavText,
 } from '../Components'
 import theme from '../theme'
@@ -34,6 +35,11 @@ storiesOf('Atoms/Shapes', module)
   .add('circle', () => <Circle />)
   .add('X', () => <X />)
   .add('Circle with lines', () => <CircleWithLines />)
+  .add('Line', () => (
+    <div style={{ height: '100px' }}>
+      <Line />
+    </div>
+  ))
 
 storiesOf('Atoms/Text', module)
   .add('Title', () => <Title>Camden Ko</Title>)
