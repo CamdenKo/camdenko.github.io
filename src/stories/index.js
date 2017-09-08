@@ -13,6 +13,8 @@ import {
   CircleWithLines,
   Title,
   Subtitle,
+  BodyText,
+  SecondaryTitle,
 } from '../Components'
 import theme from '../theme'
 
@@ -39,3 +41,10 @@ storiesOf('Atoms/Text', module)
       <Subtitle>Fullstack Developer</Subtitle>
     </div>
   ))
+  .add('BodyText', () => (
+    <div style={{ backgroundColor: theme.purple }}>
+      <BodyText>Born and raised in Aurora Il.</BodyText>
+    </div>
+  ))
+  .add('Secondary Title active', () => <SecondaryTitle active>Camden Ko</SecondaryTitle>)
+  .add('Secondary Title inactive', () => <SecondaryTitle>Camden Ko</SecondaryTitle>)
