@@ -15,6 +15,7 @@ import {
   Subtitle,
   BodyText,
   SecondaryTitle,
+  NavText,
 } from '../Components'
 import theme from '../theme'
 
@@ -48,3 +49,5 @@ storiesOf('Atoms/Text', module)
   ))
   .add('Secondary Title active', () => <SecondaryTitle active>Camden Ko</SecondaryTitle>)
   .add('Secondary Title inactive', () => <SecondaryTitle>Camden Ko</SecondaryTitle>)
+  .add('NavText active', () => <NavText active>Education</NavText>)
+  .add('NavText inactive', () => <NavText>Education</NavText>)
