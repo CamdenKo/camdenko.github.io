@@ -17,6 +17,7 @@ import {
   SecondaryTitle,
   Line,
   NavText,
+  BottomLeft,
 } from '../Components'
 import theme from '../theme'
 
@@ -57,3 +58,17 @@ storiesOf('Atoms/Text', module)
   .add('Secondary Title inactive', () => <SecondaryTitle>Camden Ko</SecondaryTitle>)
   .add('NavText active', () => <NavText active>Education</NavText>)
   .add('NavText inactive', () => <NavText>Education</NavText>)
+
+storiesOf('Atoms/Background', module)
+  .addDecorator(story => (
+    <div style={{
+      width: '30vh',
+      height: '30vh',
+      border: '3px solid black',
+    }}
+    >
+      {story()}
+    </div>
+  ))
+  .add('BottomLeft Purple', () => <BottomLeft />)
+  .add('BottomLeft inverted', () => <BottomLeft inverted />)
