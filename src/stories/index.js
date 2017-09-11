@@ -36,7 +36,8 @@ storiesOf('Utilities', module)
       {story()}
     </div>
   ))
-  .add('Rotator', () => <Rotator degrees="30"><X /></Rotator>)
+  .add('Rotator X', () => <Rotator degrees="30"><X /></Rotator>)
+  .add('Disappearer X', () => <Disappearer><X /></Disappearer>)
 
 storiesOf('Atoms/Shapes', module)
   .addDecorator(story => (

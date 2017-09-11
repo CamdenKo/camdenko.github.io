@@ -11,8 +11,8 @@ const Container = styled.div`
   }
 `
 
-export default ToWrap => (
+export default props => (
   <Container>
-    <ToWrap />
+    {props.children}
   </Container>
 )
