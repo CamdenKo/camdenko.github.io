@@ -9,6 +9,8 @@ const Container = styled.div`
       display: none;
     `
   }
+  width: fit-content;
+  height: fit-content;
 `
 
 export default props => (
