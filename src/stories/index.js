@@ -21,6 +21,7 @@ import {
   RightPurple,
   Disappearer,
   Rotator,
+  NavBox,
 } from '../Components'
 import theme from '../theme'
 
@@ -53,6 +54,7 @@ storiesOf('Atoms/Shapes', module)
       <Line />
     </div>
   ))
+  .add('NavBox', () => <NavBox />)
 
 storiesOf('Atoms/Text', module)
   .add('Title', () => <Title>Camden Ko</Title>)

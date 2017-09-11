@@ -14,7 +14,7 @@ const Container = styled.div`
   transform: rotate(10deg);
   ${
     media.phonePhone`
-      width: 318px;
+      width: 100vw;
       height: 245px;
     `
   }
