@@ -17,7 +17,8 @@ import {
   SecondaryTitle,
   Line,
   NavText,
-  BottomLeft,
+  LeftRed,
+  RightPurple,
 } from '../Components'
 import theme from '../theme'
 
@@ -63,13 +64,11 @@ storiesOf('Atoms/Background', module)
   .addDecorator(story => (
     <div style={{
       width: '30vh',
-      height: '30vh',
-      border: '3px solid black',
       position: 'relative',
     }}
     >
       {story()}
     </div>
   ))
-  .add('BottomLeft Purple', () => <BottomLeft />)
-  .add('BottomLeft inverted', () => <BottomLeft inverted />)
+  .add('Left Red', () => <LeftRed>TEXT</LeftRed>)
+  .add('Right Purple', () => <RightPurple> TEXT</RightPurple>)

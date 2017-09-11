@@ -2,11 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
-  text-align: left;
-  font-size: 35px;
-  font-family: Open Sans;
-  line-height: 29px;
-  color: ${({ theme }) => theme.white};
+  height: 100vh;
+  background-color: ${({ theme }) => theme.red};
+  width: 100%;
 `
 
 export default props => (
