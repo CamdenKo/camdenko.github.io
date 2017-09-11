@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 import { media } from '../../../theme'
 import {
-  Disappearer,
   Rotator,
 } from '../../../Components'
 

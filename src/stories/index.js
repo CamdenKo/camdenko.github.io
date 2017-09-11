@@ -22,6 +22,7 @@ import {
   Disappearer,
   Rotator,
   NavBox,
+  DifferentComponents,
 } from '../Components'
 import theme from '../theme'
 
@@ -39,6 +40,7 @@ storiesOf('Utilities', module)
   ))
   .add('Rotator X', () => <Rotator degrees="30"><X /></Rotator>)
   .add('Disappearer X', () => <Disappearer><X /></Disappearer>)
+  .add('DifferentComponents', () => <DifferentComponents big={<h1>BIG</h1>} small={<h1>small</h1>} />)
 
 storiesOf('Atoms/Shapes', module)
   .addDecorator(story => (
