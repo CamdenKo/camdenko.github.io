@@ -65,6 +65,7 @@ storiesOf('Atoms/Background', module)
       width: '30vh',
       height: '30vh',
       border: '3px solid black',
+      position: 'relative',
     }}
     >
       {story()}
