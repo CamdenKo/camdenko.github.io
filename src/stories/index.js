@@ -23,6 +23,7 @@ import {
   Rotator,
   NavBox,
   DifferentComponents,
+  StaticRotator,
 } from '../Components'
 import theme from '../theme'
 
@@ -39,6 +40,7 @@ storiesOf('Utilities', module)
     </div>
   ))
   .add('Rotator X', () => <Rotator degrees="30"><X /></Rotator>)
+  .add('StaticRotator X 30', () => <StaticRotator degrees={30}><X /></StaticRotator>)
   .add('Disappearer X', () => <Disappearer><X /></Disappearer>)
   .add('DifferentComponents', () => <DifferentComponents big={<h1>BIG</h1>} small={<h1>small</h1>} />)
 
