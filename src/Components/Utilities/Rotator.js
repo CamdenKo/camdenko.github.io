@@ -9,6 +9,8 @@ export default (props) => {
     ${media.phonePhone`
       transform: rotate(${props.degrees}deg);
     `}
+    width: fit-content;
+    height: fit-content;
   `
 
   return (
