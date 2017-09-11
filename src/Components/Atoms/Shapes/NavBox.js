@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import {
-  NavText,
-} from '../../../Components'
+import { media } from '../../../theme'
+
+export default () =>
