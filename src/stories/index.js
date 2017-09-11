@@ -19,6 +19,8 @@ import {
   NavText,
   LeftRed,
   RightPurple,
+  Disappearer,
+  Rotator,
 } from '../Components'
 import theme from '../theme'
 
@@ -27,6 +29,14 @@ addDecorator(story => (
     {story()}
   </ThemeProvider>
 ))
+
+storiesOf('Utilities', module)
+  .addDecorator(story => (
+    <div style={{ backgroundColor: theme.purple, padding: '10px' }}>
+      {story()}
+    </div>
+  ))
+  .add('Rotator', () => <Rotator degrees="30"><X /></Rotator>)
 
 storiesOf('Atoms/Shapes', module)
   .addDecorator(story => (

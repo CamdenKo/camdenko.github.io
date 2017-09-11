@@ -4,16 +4,16 @@ import styled from 'styled-components'
 import { media } from '../../theme'
 
 
-export default (ToWrap, degrees) => {
+export default (props) => {
   const Container = styled.div`
     ${media.phonePhone`
-      transform: rotate(${degrees}deg);
+      transform: rotate(${props.degrees}deg);
     `}
   `
 
   return (
     <Container>
-      <ToWrap />
+      {props.children}
     </Container>
   )
 }
