@@ -26,6 +26,7 @@ import {
   StaticRotator,
   BigRotator,
   MobileNav,
+  Nav,
 } from '../Components'
 import theme from '../theme'
 
@@ -95,3 +96,4 @@ storiesOf('Atoms/Background', module)
 
 storiesOf('Organisms/Navigation', module)
   .add('MobileNav', () => <MobileNav />)
+  .add('Nav', () => <Nav />)

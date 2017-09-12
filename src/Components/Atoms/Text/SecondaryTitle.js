@@ -11,10 +11,13 @@ export default (props) => {
     padding: 0 10px;
     font-size: 40px;
     width: fit-content;
+    overflow: hidden;
+    white-space: nowrap;
+    ${props.onClick && 'cursor: pointer;'}
   `
 
   return (
-    <Container>
+    <Container onClick={props.onClick}>
       {props.children}
     </Container>
   )
