@@ -6,7 +6,7 @@ import { media } from '../../theme'
 export default (props) => {
   const Container = styled.div`
     ${
-      media.phonePhone`
+      media.phoneTablet`
         transform: rotate(${props.degrees}deg);
       `
     }

@@ -5,7 +5,7 @@ import { media } from '../../theme'
 
 const Big = styled.div`
   ${
-    media.phonePhone`
+    media.phoneTablet`
       display: none;
     `
   }
@@ -14,7 +14,7 @@ const Big = styled.div`
 const Small = styled.div`
   display: none;
   ${
-    media.phonePhone`
+    media.phoneTablet`
       display: block;
     `
   }

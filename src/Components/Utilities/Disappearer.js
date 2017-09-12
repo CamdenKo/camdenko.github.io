@@ -5,7 +5,7 @@ import { media } from '../../theme'
 
 const Container = styled.div`
   ${
-    media.phonePhone`
+    media.phoneTablet`
       display: none;
     `
   }
