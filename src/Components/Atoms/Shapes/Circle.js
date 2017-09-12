@@ -1,14 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Circle = styled.div`
-  width: 98px;
-  height: 98px;
-  border: 20px solid ${({ theme }) => theme.white};
-  border-radius: 100px;
-  box-sizing: border-box;
-`
+const defaultSize = '98'
 
-export default () => (
-  <Circle />
-)
+export default (props) => {
+  const size = props.size || defaultSize
+  const Circle = styled.div`
+    width: ${size}px;
+    height: ${size}px;
+    border: 18px solid ${({ theme }) => theme.white};
+    border-radius: 100px;
+    box-sizing: border-box;
+  `
+
+  return (
+    <Circle />
+  )
+}
