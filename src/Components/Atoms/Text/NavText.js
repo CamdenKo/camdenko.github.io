@@ -14,6 +14,7 @@ export default (props) => {
     width: fit-content;
     text-align: right;
     line-height: 61px;
+    width: 150px;
     ${
       media.phonePhone`
         line-height: 37px;
