@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { media } from '../../../theme'
+
 export default (props) => {
   const Container = styled.div`
     color: ${({ theme }) => props.active ? theme.white : theme.black};
@@ -10,6 +12,14 @@ export default (props) => {
     font-family: Raleway;
     padding: 5px 10px;
     width: fit-content;
+    text-align: right;
+    line-height: 61px;
+    ${
+      media.phonePhone`
+        line-height: 37px;
+        text-align: center;
+      `
+    }
   `
 
   return (
