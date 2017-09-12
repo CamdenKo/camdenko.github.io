@@ -10,21 +10,12 @@ export default (props) => {
     font-size: 30px;
     font-weight: 200;
     font-family: Raleway;
-    padding: 5px 10px;
-    width: fit-content;
-    text-align: right;
-    line-height: 61px;
-    width: 150px;
-    ${
-      media.phonePhone`
-        line-height: 37px;
-        text-align: center;
-      `
-    }
+    width: 100%;
+    cursor: pointer;
   `
 
   return (
-    <Container>
+    <Container onClick={props.onClick}>
       {props.children}
     </Container>
   )
