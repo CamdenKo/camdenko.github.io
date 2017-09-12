@@ -20,6 +20,8 @@ const Circle = styled.div`
   box-sizing: border-box;
   background-size: 100% 50px;
 `
-export default () => (
-  <Circle />
+export default props => (
+  <Circle>
+    {props.children}
+  </Circle>
 )

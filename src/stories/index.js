@@ -28,6 +28,8 @@ import {
   MobileNav,
   Nav,
   TextRotator,
+  HeadshotImage,
+  Headshot,
   Navigation,
 } from '../Components'
 import theme from '../theme'
@@ -97,9 +99,15 @@ storiesOf('Atoms/Background', module)
   .add('Left Red', () => <LeftRed>TEXT</LeftRed>)
   .add('Right Purple', () => <RightPurple> TEXT</RightPurple>)
 
+storiesOf('Atoms/Assets', module)
+  .add('Headshot', () => <HeadshotImage />)
+
 storiesOf('Molecules/Navigation', module)
   .add('MobileNav', () => <MobileNav />)
   .add('Nav', () => <Nav />)
+
+storiesOf('Molecules/HomePage', module)
+  .add('Headshot', () => <Headshot />)
 
 storiesOf('Organisms', module)
   .add('Navigation', () => <Navigation />)
