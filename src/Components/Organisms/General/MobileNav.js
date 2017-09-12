@@ -29,7 +29,7 @@ const choices = [
 export default () => (
   <NavBoxMobile>
     <Body>
-      <SecondaryTitle active>Camden Ko</SecondaryTitle>
+      <SecondaryTitle padding="0 10px" active>Camden Ko</SecondaryTitle>
       <NavTextWrapper>
         {
           choices.map(choice => <NavText>{choice}</NavText>)

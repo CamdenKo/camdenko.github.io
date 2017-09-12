@@ -8,7 +8,7 @@ export default (props) => {
     color: ${props.active ? ({ theme }) => theme.white : ({ theme }) => theme.black};
     font-family: ${({ theme }) => theme.primaryFontFamily};
     font-weight: 600;
-    padding: 10px 0;
+    padding: ${props.padding || '0'};
     font-size: 40px;
     width: fit-content;
     overflow: hidden;

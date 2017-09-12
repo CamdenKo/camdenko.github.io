@@ -49,7 +49,7 @@ export default () => (
         <Line />
       </LineContainer>
       <TextRotator>
-        <SecondaryTitle active>Camden Ko</SecondaryTitle>
+        <SecondaryTitle active padding="10px 0">Camden Ko</SecondaryTitle>
       </TextRotator>
     </Container>
   </NavBox>
