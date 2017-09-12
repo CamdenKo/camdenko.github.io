@@ -7,5 +7,5 @@ import {
 } from '../../Components'
 
 export default () => (
-  DifferentComponents(Nav, MobileNav, 600)
+  <DifferentComponents big={<Nav />} small={<MobileNav />} />
 )
