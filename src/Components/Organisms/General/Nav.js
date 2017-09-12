@@ -5,7 +5,7 @@ import {
   NavText,
   NavBox,
   Line,
-  StaticRotator,
+  TextRotator,
   SecondaryTitle,
 } from '../../../Components'
 
@@ -15,16 +15,19 @@ const Container = styled.div`
   height: 100%;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 `
 
 const TextContainer = styled.div`
   text-align: right;
   line-height: 61px;
+  display: unset;
 `
 
 const LineContainer = styled.div`
   height: 219px;
+  padding-left: 20px;
+  padding-right: 10px;
 `
 
 const choices = [
@@ -45,9 +48,9 @@ export default () => (
       <LineContainer>
         <Line />
       </LineContainer>
-      <StaticRotator degrees={90}>
+      <TextRotator>
         <SecondaryTitle active>Camden Ko</SecondaryTitle>
-      </StaticRotator>
+      </TextRotator>
     </Container>
   </NavBox>
 )
