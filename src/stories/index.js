@@ -28,6 +28,7 @@ import {
   MobileNav,
   Nav,
   TextRotator,
+  Scaler,
   HeadshotImage,
   Headshot,
   Navigation,
@@ -52,6 +53,16 @@ storiesOf('Utilities', module)
   .add('DifferentComponents', () => <DifferentComponents big={<h1>BIG</h1>} small={<h1>small</h1>} />)
   .add('BigRotator X', () => <BigRotator degrees={30}><X /></BigRotator>)
   .add('TextRotator', () => <TextRotator>Rotated</TextRotator>)
+  .add('Scaler', () => (
+    <div>
+      REGULAR
+      <X />
+      SCALED 1.5
+      <Scaler scale={1.5}>
+        <X />
+      </Scaler>
+    </div>
+  ))
 
 storiesOf('Atoms/Shapes', module)
   .addDecorator(story => (

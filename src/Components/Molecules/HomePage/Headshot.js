@@ -4,11 +4,14 @@ import styled from 'styled-components'
 import {
   CircleWithLines,
   HeadshotImage,
+  X,
+  Circle,
 } from '../../../Components'
 
 const Container = styled.div`
   overflow: hidden;
   width: fit-content;
+  position: relative;
   height: 425px;
 `
 
