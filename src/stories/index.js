@@ -23,6 +23,7 @@ import {
   Rotator,
   NavBox,
   DifferentComponents,
+  CombinedBackground,
   StaticRotator,
   BigRotator,
   MobileNav,
@@ -31,6 +32,7 @@ import {
   PurpleTriangle,
   Scaler,
   HeadshotImage,
+  RightBackground,
   Headshot,
   Subsubtitle,
   Navigation,
@@ -139,6 +141,8 @@ storiesOf('Molecules/HomePage', module)
 
 storiesOf('Molecules/General', module)
   .add('Left Background', () => <LeftBackground>TEXT</LeftBackground>)
+  .add('Right Background', () => <RightBackground>TEXT</RightBackground>)
+  .add('Combined Background', () => <CombinedBackground />)
 
 storiesOf('Organisms', module)
   .add('Navigation', () => <Navigation />)

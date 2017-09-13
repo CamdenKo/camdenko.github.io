@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import {
   Purple,
@@ -6,13 +7,17 @@ import {
   Disappearer,
 } from '../../../Components'
 
+const Container = styled.div`
+  width: 100%;
+`
+
 export default props => (
-  <div>
+  <Container>
     <Purple>
       {props.children}
     </Purple>
     <Disappearer>
       <PurpleTriangle />
     </Disappearer>
-  </div>
+  </Container>
 )

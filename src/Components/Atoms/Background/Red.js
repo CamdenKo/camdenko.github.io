@@ -6,7 +6,7 @@ import { media } from '../../../theme'
 const Container = styled.div`
   height: 100vh;
   background-color: ${({ theme }) => theme.red};
-  width: 47%;
+  width: 100%;
   ${
     media.phoneTablet`
       width: 100%;
