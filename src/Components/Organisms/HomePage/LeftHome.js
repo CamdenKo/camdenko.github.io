@@ -12,6 +12,7 @@ const FlexContainer = styled.div`
   padding: 60px 0 0;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
   box-sizing: border-box;
   align-items: center;
   height: 100%;
@@ -32,7 +33,7 @@ export default () => (
   <LeftBackground>
     <FlexContainer>
       <JobWrapper>
-        {/* <JobTitle /> */}
+        <JobTitle />
       </JobWrapper>
       <Headshot />
     </FlexContainer>

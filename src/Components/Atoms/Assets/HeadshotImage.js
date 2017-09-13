@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import picture from '../../../../public/assets/Headshot_burned.png'
+import picture from '../../../assets/Headshot_burned.png'
 
 const Headshot = styled.img`
   display: block;

@@ -7,6 +7,6 @@ export default styled.div`
   border-bottom: 103vh solid ${({ theme }) => theme.purple};
   border-right: 100vw solid transparent;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
 `
