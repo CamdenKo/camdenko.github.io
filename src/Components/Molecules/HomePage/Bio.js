@@ -7,7 +7,7 @@ import {
 
 const Container = styled.div`
   max-width: 420px;
-  padding: 0 20px;
+  padding: 0 30px;
   box-sizing: border-box;
 `
 

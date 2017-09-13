@@ -5,7 +5,7 @@ import { media } from '../../../theme'
 
 const Container = styled.div`
   text-align: left;
-  font-size: 30px;
+  font-size: 20px;
   font-family: Open Sans;
   line-height: 30px;
   font-weight: 100;

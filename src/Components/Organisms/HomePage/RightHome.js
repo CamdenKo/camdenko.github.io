@@ -10,6 +10,7 @@ import {
   StaticRotator,
   Disappearer,
   BigDisappearer,
+  BigRotator,
 } from '../../../Components'
 import { media } from '../../../theme'
 
@@ -17,6 +18,7 @@ const FlexContainer = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
+  overflow: hidden;
   ${
     media.phoneTablet`
       display: flex;
@@ -38,18 +40,35 @@ const TextWrapper = styled.div`
   }
 `
 
+const XWrapper = styled.div`
+  position: absolute;
+  bottom: 0;
+  right: 0;
+`
+
+const OWrapper = styled.div`
+  position: absolute;
+  top: 0;
+  left: -40px;
+`
+
 export default () => (
   <RightBackground>
     <FlexContainer>
       <TextWrapper>
-        <Bio />
+        <BigRotator degrees={7}>
+          <Bio />
+        </BigRotator>
       </TextWrapper>
       <BigDisappearer>
-        <AbsolutePosition top={200} left={470}>
+        <XWrapper>
           <StaticRotator degrees={-10}>
-            <X />
+            <X size={50} />
           </StaticRotator>
-        </AbsolutePosition>
+        </XWrapper>
+        <OWrapper>
+          <Circle size={80} />
+        </OWrapper>
       </BigDisappearer>
     </FlexContainer>
   </RightBackground>
