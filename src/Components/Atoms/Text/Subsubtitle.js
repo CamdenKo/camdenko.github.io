@@ -1,16 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Container = styled.div`
-  font-size: 50px;
-  color: ${({ theme }) => theme.white};
+const Text = styled.p`
+  font-size: 35px;
   font-family: ${({ theme }) => theme.secondaryFontFamily};
-  font-weight: 600;
+  color: ${({ theme }) => theme.white};
+  margin: 0;
 `
-// TODO: Mobile responsive
 
 export default props => (
-  <Container>
+  <Text>
     {props.children}
-  </Container>
+  </Text>
 )

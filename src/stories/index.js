@@ -31,7 +31,9 @@ import {
   Scaler,
   HeadshotImage,
   Headshot,
+  Subsubtitle,
   Navigation,
+  JobTitle,
 } from '../Components'
 import theme from '../theme'
 
@@ -96,6 +98,11 @@ storiesOf('Atoms/Text', module)
   .add('Secondary Title inactive', () => <SecondaryTitle>Camden Ko</SecondaryTitle>)
   .add('NavText active', () => <NavText active>Education</NavText>)
   .add('NavText inactive', () => <NavText>Education</NavText>)
+  .add('Subsubtitle', () => (
+    <div style={{ backgroundColor: 'black' }}>
+      <Subsubtitle>React</Subsubtitle>
+    </div>
+  ))
 
 storiesOf('Atoms/Background', module)
   .addDecorator(story => (
@@ -119,6 +126,11 @@ storiesOf('Molecules/Navigation', module)
 
 storiesOf('Molecules/HomePage', module)
   .add('Headshot', () => <Headshot />)
+  .add('JobTitle', () => (
+    <div style={{ backgroundColor: 'purple' }}>
+      <JobTitle />
+    </div>
+  ))
 
 storiesOf('Organisms', module)
   .add('Navigation', () => <Navigation />)
