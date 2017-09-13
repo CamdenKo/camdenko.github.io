@@ -6,8 +6,8 @@ export default (props) => {
     position: absolute;
     height: fit-content;
     width: fit-content;
-    top: ${props.top}px;
-    left: ${props.left}px;
+    top: ${typeof props.top === 'number' ? `${props.top}px` : props.top};
+    left: ${typeof props.left === 'number' ? `${props.left}px` : props.left};
   `
 
   return (
