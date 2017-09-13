@@ -6,6 +6,8 @@ import {
   HeadshotImage,
   X,
   Circle,
+  AbsolutePosition,
+  Scaler,
 } from '../../../Components'
 
 const Container = styled.div`
@@ -24,11 +26,28 @@ const ImageContainer = styled.div`
 `
 
 export default () => (
-  <Container>
-    <CircleWithLines>
-      <ImageContainer>
-        <HeadshotImage />
-      </ImageContainer>
-    </CircleWithLines>
-  </Container>
+  <div>
+    <Container>
+      <CircleWithLines>
+        <ImageContainer>
+          <HeadshotImage />
+        </ImageContainer>
+      </CircleWithLines>
+    </Container>
+    <AbsolutePosition top={220} left={275}>
+      <Scaler scale={0.8}>
+        <X />
+      </Scaler>
+    </AbsolutePosition>
+    <AbsolutePosition top={160} left={0}>
+      <Scaler scale={1.2}>
+        <Circle />
+      </Scaler>
+    </AbsolutePosition>
+    <AbsolutePosition top={320} left={420}>
+      <Scaler scale={0.9}>
+        <X />
+      </Scaler>
+    </AbsolutePosition>
+  </div>
 )
