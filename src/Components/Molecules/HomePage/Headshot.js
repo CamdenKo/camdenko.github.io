@@ -9,12 +9,28 @@ import {
   AbsolutePosition,
   Scaler,
 } from '../../../Components'
+import { media } from '../../../theme'
 
 const Container = styled.div`
   overflow: hidden;
   width: fit-content;
   position: relative;
   height: 425px;
+  ${
+    media.tabletDesktop`
+      height: 400px;
+    `
+  }
+  ${
+    media.tabletTablet`
+      height: auto;
+    `
+  }
+  ${
+    media.phoneTablet`
+      height: 425px;
+    `
+  }
 `
 
 const ShapeContainer = styled.div`

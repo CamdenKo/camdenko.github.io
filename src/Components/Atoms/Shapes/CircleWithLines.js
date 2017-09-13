@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { media } from '../../../theme'
+
 const BoxSpacing = '30px'
 
 const Circle = styled.div`
@@ -19,6 +21,24 @@ const Circle = styled.div`
   padding-top: ${BoxSpacing};
   box-sizing: border-box;
   background-size: 100% 50px;
+  ${
+    media.tabletDesktop`
+      width: 450px;
+      height: 450px;
+    `
+  }
+  ${
+    media.tabletTablet`
+      width: 300px;
+      height: 300px;
+    `
+  }
+  ${
+    media.phoneTablet`
+      width: 500px;
+      height: 500px;
+    `
+  }
 `
 export default props => (
   <Circle>
