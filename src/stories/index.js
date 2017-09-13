@@ -36,6 +36,7 @@ import {
   Navigation,
   RedTriangle,
   JobTitle,
+  LeftBackground,
 } from '../Components'
 import theme from '../theme'
 
@@ -135,6 +136,9 @@ storiesOf('Molecules/HomePage', module)
       <JobTitle />
     </div>
   ))
+
+storiesOf('Molecules/General', module)
+  .add('Left Background', () => <LeftBackground>TEXT</LeftBackground>)
 
 storiesOf('Organisms', module)
   .add('Navigation', () => <Navigation />)

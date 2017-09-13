@@ -5,5 +5,8 @@ export default styled.div`
   height: 0;
   z-index: -1;
   border-top: 100vh solid ${({ theme }) => theme.red};
-  border-left: 100vh solid transparent;
+  border-left: 100vw solid transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
 `

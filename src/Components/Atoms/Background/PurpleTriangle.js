@@ -5,5 +5,8 @@ export default styled.div`
   height: 0;
   z-index: -1;
   border-bottom: 100vh solid ${({ theme }) => theme.purple};
-  border-right: 100vh solid transparent;
+  border-right: 100vw solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
 `
