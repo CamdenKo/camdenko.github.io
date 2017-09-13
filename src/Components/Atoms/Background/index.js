@@ -1,3 +1,2 @@
-export { default as Parent } from './Parent'
-export { default as LeftRed } from './LeftRed'
-export { default as RightPurple } from './RightPurple'
+export { default as Purple } from './Purple'
+export { default as Red } from './Red'

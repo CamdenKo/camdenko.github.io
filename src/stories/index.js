@@ -17,8 +17,8 @@ import {
   SecondaryTitle,
   Line,
   NavText,
-  LeftRed,
-  RightPurple,
+  Purple,
+  Red,
   Disappearer,
   Rotator,
   NavBox,
@@ -114,8 +114,8 @@ storiesOf('Atoms/Background', module)
       {story()}
     </div>
   ))
-  .add('Left Red', () => <LeftRed>TEXT</LeftRed>)
-  .add('Right Purple', () => <RightPurple> TEXT</RightPurple>)
+  .add('Red', () => <Red>TEXT</Red>)
+  .add('Purple', () => <Purple> TEXT</Purple>)
 
 storiesOf('Atoms/Assets', module)
   .add('Headshot', () => <HeadshotImage />)
