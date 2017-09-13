@@ -28,6 +28,7 @@ import {
   MobileNav,
   Nav,
   TextRotator,
+  PurpleTriangle,
   Scaler,
   HeadshotImage,
   Headshot,
@@ -116,6 +117,7 @@ storiesOf('Atoms/Background', module)
   ))
   .add('Red', () => <Red>TEXT</Red>)
   .add('Purple', () => <Purple> TEXT</Purple>)
+  .add('Purple Triangle', () => <PurpleTriangle />)
 
 storiesOf('Atoms/Assets', module)
   .add('Headshot', () => <HeadshotImage />)
