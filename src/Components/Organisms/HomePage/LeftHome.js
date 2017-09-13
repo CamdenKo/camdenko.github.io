@@ -15,6 +15,7 @@ const FlexContainer = styled.div`
   box-sizing: border-box;
   align-items: center;
   height: 100%;
+  overflow: hidden;
   justify-content: space-between;
   ${
     media.phoneTablet`
@@ -32,7 +33,7 @@ export default () => (
   <LeftBackground>
     <FlexContainer>
       <JobWrapper>
-        <JobTitle />
+        {/* <JobTitle /> */}
       </JobWrapper>
       <Headshot />
     </FlexContainer>

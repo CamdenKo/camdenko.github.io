@@ -8,6 +8,7 @@ const Headshot = styled.img`
   width: fit-content;
   height: fit-content;
   transform: scale(0.8);
+  object-fill: cover;
 `
 
 export default () => (
