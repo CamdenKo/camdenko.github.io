@@ -1,18 +1,18 @@
 import React from 'react'
 
 import {
-  Purple,
-  PurpleTriangle,
+  Red,
+  RedTriangle,
   Disappearer,
 } from '../../../Components'
 
 export default props => (
   <div>
-    <Purple>
+    <Red>
       {props.children}
-    </Purple>
+    </Red>
     <Disappearer>
-      <PurpleTriangle />
+      <RedTriangle />
     </Disappearer>
   </div>
 )
