@@ -3,9 +3,10 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   text-align: left;
-  font-size: 35px;
+  font-size: 30px;
   font-family: Open Sans;
-  line-height: 29px;
+  line-height: 30px;
+  font-weight: 100;
   color: ${({ theme }) => theme.white};
 `
 
