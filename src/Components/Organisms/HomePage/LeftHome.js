@@ -26,7 +26,7 @@ const FlexContainer = styled.div`
 `
 
 const JobWrapper = styled.div`
-  padding: 10px 0;
+  padding: 10px 0 45px;
 `
 
 export default () => (
