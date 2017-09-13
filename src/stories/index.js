@@ -7,6 +7,7 @@ import {
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
+require('./Organisms')
 import {
   Circle,
   X,

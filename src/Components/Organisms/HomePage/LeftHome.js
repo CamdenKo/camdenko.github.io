@@ -5,7 +5,6 @@ import {
   JobTitle,
   LeftBackground,
   Headshot,
-  Scaler,
 } from '../../../Components'
 import { media } from '../../../theme'
 
