@@ -10,7 +10,7 @@ const Container = styled.div`
   font-weight: 600;
   ${
     media.phoneTablet`
-      font-size: 30px;
+      font-size: 9vw;
     `
   }
 `

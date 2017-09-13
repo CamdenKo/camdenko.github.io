@@ -10,7 +10,7 @@ const Text = styled.p`
   margin: 0;
   ${
     media.phoneTablet`
-      font-size: 23px;
+      font-size: 5vw;
     `
   }
 `

@@ -19,6 +19,7 @@ import {
   NavText,
   Purple,
   Red,
+  LeftHome,
   Disappearer,
   Rotator,
   NavBox,
@@ -146,3 +147,4 @@ storiesOf('Molecules/General', module)
 
 storiesOf('Organisms', module)
   .add('Navigation', () => <Navigation />)
+  .add('Left Home', () => <LeftHome />)

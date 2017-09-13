@@ -17,6 +17,10 @@ const Container = styled.div`
   height: 425px;
 `
 
+const ShapeContainer = styled.div`
+  position: relative;
+`
+
 const ImageContainer = styled.div`
   display: flex;
   align-items: center;
@@ -26,7 +30,7 @@ const ImageContainer = styled.div`
 `
 
 export default () => (
-  <div>
+  <ShapeContainer>
     <Container>
       <CircleWithLines>
         <ImageContainer>
@@ -49,5 +53,5 @@ export default () => (
         <X />
       </Scaler>
     </AbsolutePosition>
-  </div>
+  </ShapeContainer>
 )
