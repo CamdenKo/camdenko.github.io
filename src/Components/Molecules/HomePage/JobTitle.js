@@ -5,6 +5,8 @@ import {
   Subtitle,
   Subsubtitle,
   Title,
+  Disappearer,
+  BigRotator,
 } from '../../../Components'
 
 const Container = styled.div`
@@ -15,8 +17,12 @@ const Container = styled.div`
 
 export default () => (
   <Container>
-    <Title>Camden Ko</Title>
-    <Subtitle>Fullstack Developer</Subtitle>
-    <Subsubtitle>React · Express · Node.js</Subsubtitle>
+    <BigRotator degrees={-6}>
+      <Disappearer>
+        <Title>Camden Ko</Title>
+      </Disappearer>
+      <Subtitle>Fullstack Developer</Subtitle>
+      <Subsubtitle>React · Express · Node.js</Subsubtitle>
+    </BigRotator>
   </Container>
 )

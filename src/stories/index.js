@@ -127,7 +127,7 @@ storiesOf('Molecules/Navigation', module)
 storiesOf('Molecules/HomePage', module)
   .add('Headshot', () => <Headshot />)
   .add('JobTitle', () => (
-    <div style={{ backgroundColor: 'purple' }}>
+    <div style={{ backgroundColor: 'purple', padding: '30px' }}>
       <JobTitle />
     </div>
   ))
