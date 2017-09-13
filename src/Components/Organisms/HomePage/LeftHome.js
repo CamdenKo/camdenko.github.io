@@ -15,7 +15,6 @@ const FlexContainer = styled.div`
   box-sizing: border-box;
   align-items: center;
   height: 100%;
-  overflow: hidden;
   justify-content: space-between;
   ${
     media.phoneTablet`

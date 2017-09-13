@@ -34,7 +34,7 @@ const FlexContainer = styled.div`
 const TextWrapper = styled.div`
   position: absolute;
   bottom: 100px;
-  right: 130px;
+  right: 3vw;
   ${
     media.phoneTablet`
       position: static;
