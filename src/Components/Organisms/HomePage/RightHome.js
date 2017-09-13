@@ -8,7 +8,8 @@ import {
   AbsolutePosition,
   RightBackground,
   StaticRotator,
-  DifferentComponents,
+  Disappearer,
+  BigDisappearer,
 } from '../../../Components'
 import { media } from '../../../theme'
 
@@ -43,11 +44,13 @@ export default () => (
       <TextWrapper>
         <Bio />
       </TextWrapper>
-      <AbsolutePosition top={200} left={470}>
-        <StaticRotator degrees={-10}>
-          <X />
-        </StaticRotator>
-      </AbsolutePosition>
+      <BigDisappearer>
+        <AbsolutePosition top={200} left={470}>
+          <StaticRotator degrees={-10}>
+            <X />
+          </StaticRotator>
+        </AbsolutePosition>
+      </BigDisappearer>
     </FlexContainer>
   </RightBackground>
 )

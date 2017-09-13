@@ -6,13 +6,15 @@ import {
 } from '../../../Components'
 
 const Container = styled.div`
-  width: 420px;
+  max-width: 420px;
+  padding: 0 20px;
+  box-sizing: border-box;
 `
 
 export default () => (
   <Container>
     <BodyText>Born and raised in Aurora
     IL. Versed in the dark arts
-    of web development.</BodyText>
+    of web development. Hip-hop, React, Medium.com</BodyText>
   </Container>
 )
