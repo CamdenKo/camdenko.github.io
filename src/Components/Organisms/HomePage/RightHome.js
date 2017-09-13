@@ -51,7 +51,7 @@ export default () => (
         </BigRotator>
       </TextWrapper>
       <Disappearer>
-        <AbsolutePositionBR bottom={450} right={400}>
+        <AbsolutePositionBR bottom={450} right="25vw">
           <StaticRotator degrees={-41}>
             <X size={150} />
           </StaticRotator>
@@ -61,7 +61,7 @@ export default () => (
             <Circle />
           </Scaler>
         </AbsolutePositionBR>
-        <AbsolutePositionBR bottom={-20} right={500}>
+        <AbsolutePositionBR bottom={-20} right="30vw">
           <Circle />
         </AbsolutePositionBR>
       </Disappearer>
