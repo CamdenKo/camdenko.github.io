@@ -34,6 +34,7 @@ import {
   Headshot,
   Subsubtitle,
   Navigation,
+  RedTriangle,
   JobTitle,
 } from '../Components'
 import theme from '../theme'
@@ -118,6 +119,7 @@ storiesOf('Atoms/Background', module)
   .add('Red', () => <Red>TEXT</Red>)
   .add('Purple', () => <Purple> TEXT</Purple>)
   .add('Purple Triangle', () => <PurpleTriangle />)
+  .add('Red Triangle', () => <RedTriangle />)
 
 storiesOf('Atoms/Assets', module)
   .add('Headshot', () => <HeadshotImage />)
