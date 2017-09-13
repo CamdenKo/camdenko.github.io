@@ -14,7 +14,6 @@ const Container = styled.div`
     `
   }
 `
-// TODO: Mobile responsive
 
 export default props => (
   <Container>
