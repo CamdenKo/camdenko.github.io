@@ -1,7 +1,13 @@
+import React from 'react'
 import {
   storiesOf,
-  addDecorator,
 } from '@storybook/react'
 
-storiesOf('a', module)
-  .add('a', () => <div>a</div>)
+import {
+  Navigation,
+  LeftHome,
+} from '../Components'
+
+storiesOf('Organisms', module)
+.add('Navigation', () => <Navigation />)
+.add('Left Home', () => <LeftHome />)
