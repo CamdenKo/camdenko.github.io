@@ -10,6 +10,6 @@ import {
 } from '../Components'
 
 storiesOf('Organisms', module)
-.add('Navigation', () => <Navigation />)
-.add('Left Home', () => <LeftHome />)
-.add('Right Home', () => <RightHome />)
+  .add('Navigation', () => <Navigation />)
+  .add('Left Home', () => <LeftHome />)
+  .add('Right Home', () => <RightHome />)
