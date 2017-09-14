@@ -12,7 +12,7 @@ const FlexContainer = styled.div`
   padding: 60px 0 0;
   display: flex;
   flex-direction: column;
-  overflow-y: hidden;
+  overflow: hidden;
   box-sizing: border-box;
   align-items: center;
   height: 100%;

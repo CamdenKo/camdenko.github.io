@@ -26,3 +26,12 @@ export const media = Object.keys(sizes).reduce((acc, label) => {
   `
   return acc
 }, {})
+
+export const mediaHeight = Object.keys(sizes).reduce((acc, label) => {
+  acc[label] = (...args) => css`
+    @media (max-height: ${sizes[label] / 16}em) {
+      ${css(...args)}
+    }
+  `
+  return acc
+}, {})
