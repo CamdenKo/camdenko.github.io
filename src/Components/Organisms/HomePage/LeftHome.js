@@ -6,7 +6,7 @@ import {
   LeftBackground,
   Headshot,
 } from '../../../Components'
-import { media } from '../../../theme'
+import { media, mediaHeight } from '../../../theme'
 
 const FlexContainer = styled.div`
   padding: 60px 0 0;
@@ -21,6 +21,11 @@ const FlexContainer = styled.div`
     media.phoneTablet`
       padding: 0;
       justify-content: center;
+    `
+  }
+  ${
+    mediaHeight.phoneTablet`
+      padding: 0;
     `
   }
 `

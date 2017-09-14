@@ -13,7 +13,7 @@ import {
   BigRotator,
   AbsolutePositionBR,
 } from '../../../Components'
-import { media } from '../../../theme'
+import { media, mediaHeight } from '../../../theme'
 
 const FlexContainer = styled.div`
   position: relative;
@@ -28,7 +28,6 @@ const FlexContainer = styled.div`
     `
   }
 `
-
 const TextWrapper = styled.div`
   position: absolute;
   bottom: 14vw;
@@ -36,6 +35,12 @@ const TextWrapper = styled.div`
   ${
     media.phoneTablet`
       position: static;
+    `
+  }
+  ${
+    mediaHeight.phoneTablet`
+      bottom: 0;
+      right: 0;
     `
   }
 `

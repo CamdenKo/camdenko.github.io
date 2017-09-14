@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { media } from '../../theme'
+import { media, mediaHeight } from '../../theme'
 
 export default (props) => {
   const Container = styled.div`
@@ -10,6 +10,11 @@ export default (props) => {
     transform: rotate(${props.degrees}deg);
     ${
       media.phoneTablet`
+        transform: rotate(0deg);
+      `
+    }
+    ${
+      mediaHeight.phoneTablet`
         transform: rotate(0deg);
       `
     }
