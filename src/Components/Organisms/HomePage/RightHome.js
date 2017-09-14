@@ -63,7 +63,7 @@ export default () => (
         </AbsolutePositionBR>
       </Disappearer>
       <BigDisappearer>
-        <AbsolutePositionBR bottom={0} right={0} >
+        <AbsolutePositionBR bottom={20} right={20}>
           <StaticRotator degrees={-10}>
             <X size={50} />
           </StaticRotator>
