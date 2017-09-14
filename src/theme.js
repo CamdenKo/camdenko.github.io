@@ -1,4 +1,4 @@
-import { css } from 'styled-components'
+import { css, keyframes } from 'styled-components'
 
 export default {
   red: '#FF0773',
@@ -35,3 +35,14 @@ export const mediaHeight = Object.keys(sizes).reduce((acc, label) => {
   `
   return acc
 }, {})
+
+export const animations = {
+  wiggle: keyframes`
+    60% {
+      transform: rotate(20deg);
+    }
+    100% {
+      transform: rotate(10deg);
+    }
+  `,
+}

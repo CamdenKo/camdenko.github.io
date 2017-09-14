@@ -9,7 +9,7 @@ const Link = styled.a`
 export default (props) => {
   const Container = styled.div`
     color: ${({ theme }) => props.active ? theme.white : theme.black};
-    background-image: linear-gradient(to right, transparent 50%, ${({ theme }) => theme.black} 50%);
+    background-image: linear-gradient(to right, transparent 50.1%, ${({ theme }) => theme.black} 49.9%);
     background-size: 200% 100%;
     transition: background-position .5s, color .2s;
     font-size: 30px;
