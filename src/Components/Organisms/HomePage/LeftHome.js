@@ -5,9 +5,9 @@ import {
   JobTitle,
   LeftBackground,
   Headshot,
-  BigDisappearer,
   X,
   AbsolutePosition,
+  DisappearerH,
   StaticRotator,
   Disappearer,
 } from '../../../Components'
@@ -49,11 +49,13 @@ export default () => (
       <Headshot />
     </FlexContainer>
     <Disappearer>
-      <AbsolutePosition top="43vh" left="13vw">
-        <StaticRotator degrees={15}>
-          <X />
-        </StaticRotator>
-      </AbsolutePosition>
+      <DisappearerH>
+        <AbsolutePosition top="43vh" left="13vw">
+          <StaticRotator degrees={15}>
+            <X />
+          </StaticRotator>
+        </AbsolutePosition>
+      </DisappearerH>
     </Disappearer>
   </LeftBackground>
 )

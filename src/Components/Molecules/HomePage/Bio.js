@@ -15,6 +15,6 @@ export default () => (
   <Container>
     <BodyText>Born and raised in Aurora
     IL. Versed in the dark arts
-    of web development. Hip-hop, React, Medium.com</BodyText>
+    of web development. Teaching fellow @ Fullstack Academy. Hip-hop, React, Medium.com</BodyText>
   </Container>
 )

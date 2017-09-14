@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { media } from '../../../theme'
+import { media, mediaHeight } from '../../../theme'
 
 const Container = styled.div`
   text-align: left;
@@ -13,6 +13,11 @@ const Container = styled.div`
   ${
     media.phoneTablet`
       font-size: 20px;
+    `
+  }
+  ${
+    mediaHeight.phoneTablet`
+      font-size: 15px;
     `
   }
 `

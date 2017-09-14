@@ -11,6 +11,7 @@ import {
   Disappearer,
   BigDisappearer,
   BigRotator,
+  DisappearerH,
   AbsolutePositionBR,
 } from '../../../Components'
 import { media, mediaHeight } from '../../../theme'
@@ -62,9 +63,11 @@ export default () => (
         <AbsolutePositionBR bottom={620} right={10}>
           <Circle size={70} />
         </AbsolutePositionBR>
-        <AbsolutePositionBR bottom={0} right="30vw">
-          <Circle />
-        </AbsolutePositionBR>
+        <DisappearerH>
+          <AbsolutePositionBR bottom={0} right="30vw">
+            <Circle />
+          </AbsolutePositionBR>
+        </DisappearerH>
       </Disappearer>
       <BigDisappearer>
         <AbsolutePositionBR bottom={20} right={20}>

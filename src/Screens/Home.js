@@ -6,7 +6,7 @@ import {
   RightHome,
   Navigation,
 } from '../Components'
-import { media } from '../theme'
+import { media, mediaHeight } from '../theme'
 
 const Container = styled.div`
   display: flex;
@@ -33,6 +33,13 @@ const NavigationWrapper = styled.div`
       top: 0;
       right: 0;
       transform: scale(1.0);
+    `
+  }
+  ${
+    mediaHeight.phoneTablet`
+      top: -13vh;
+      right: -8vw;
+      transform: scale(0.5);
     `
   }
 `
