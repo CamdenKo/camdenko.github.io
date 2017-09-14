@@ -64,10 +64,5 @@ export default () => (
         <Circle />
       </Scaler>
     </AbsolutePosition>
-    <AbsolutePosition top={320} left={420}>
-      <Scaler scale={0.9}>
-        <X />
-      </Scaler>
-    </AbsolutePosition>
   </ShapeContainer>
 )

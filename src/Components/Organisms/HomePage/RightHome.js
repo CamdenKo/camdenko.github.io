@@ -20,7 +20,6 @@ const FlexContainer = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   ${
     media.phoneTablet`
       display: flex;
@@ -56,12 +55,10 @@ export default () => (
             <X size={150} />
           </StaticRotator>
         </AbsolutePositionBR>
-        <AbsolutePositionBR bottom={620} right={-30}>
-          <Scaler scale={0.7}>
-            <Circle />
-          </Scaler>
+        <AbsolutePositionBR bottom={620} right={10}>
+          <Circle size={70} />
         </AbsolutePositionBR>
-        <AbsolutePositionBR bottom={-20} right="30vw">
+        <AbsolutePositionBR bottom={0} right="30vw">
           <Circle />
         </AbsolutePositionBR>
       </Disappearer>
