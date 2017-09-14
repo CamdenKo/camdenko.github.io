@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import {
   LeftHome,
   RightHome,
+  Navigation,
 } from '../Components'
 import { media } from '../theme'
 
@@ -17,8 +18,30 @@ const Container = styled.div`
   }
 `
 
+const NavigationWrapper = styled.div`
+  position: absolute;
+  top: 3vw;
+  right: 3vw;
+  ${
+    media.tabletTablet`
+      transform: scale(0.7);
+    `
+  }
+  ${
+    media.phoneTablet`
+      position: relative;
+      top: 0;
+      right: 0;
+      transform: scale(1.0);
+    `
+  }
+`
+
 export default () => (
   <Container>
+    <NavigationWrapper>
+      <Navigation />
+    </NavigationWrapper>
     <LeftHome />
     <RightHome />
   </Container>

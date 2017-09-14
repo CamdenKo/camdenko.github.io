@@ -12,7 +12,6 @@ import {
   BigDisappearer,
   BigRotator,
   AbsolutePositionBR,
-  Scaler,
 } from '../../../Components'
 import { media } from '../../../theme'
 
@@ -32,7 +31,7 @@ const FlexContainer = styled.div`
 
 const TextWrapper = styled.div`
   position: absolute;
-  bottom: 100px;
+  bottom: 14vw;
   right: 3vw;
   ${
     media.phoneTablet`
