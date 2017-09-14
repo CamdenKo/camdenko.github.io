@@ -1,6 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
+const Link = styled.a`
+  text-decoration: none;
+  color: inherit;
+`
+
 export default (props) => {
   const Container = styled.div`
     color: ${({ theme }) => props.active ? theme.white : theme.black};
@@ -13,8 +18,10 @@ export default (props) => {
   `
 
   return (
-    <Container onClick={props.onClick}>
-      {props.children}
+    <Container>
+      <Link href={props.href}>
+        {props.children}
+      </Link>
     </Container>
   )
 }

@@ -19,20 +19,13 @@ const NavTextWrapper = styled.div`
   padding-top: 11px;
 `
 
-const choices = [
-  'Projects',
-  'Experience',
-  'Education',
-  'Contact Me',
-]
-
-export default () => (
+export default props => (
   <NavBoxMobile>
     <Body>
       <SecondaryTitle padding="0 10px" active>Camden Ko</SecondaryTitle>
       <NavTextWrapper>
         {
-          choices.map(choice => <NavText>{choice}</NavText>)
+          props.links.map(link => <NavText href={link.url}>{link.name}</NavText>)
         }
       </NavTextWrapper>
     </Body>

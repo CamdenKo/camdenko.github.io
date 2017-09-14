@@ -6,6 +6,6 @@ import {
   DifferentComponents,
 } from '../../Components'
 
-export default () => (
-  <DifferentComponents big={<Nav />} small={<MobileNav />} />
+export default props => (
+  <DifferentComponents big={<Nav {...props} />} small={<MobileNav {...props} />} />
 )

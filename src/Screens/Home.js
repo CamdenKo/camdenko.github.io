@@ -21,6 +21,7 @@ const Container = styled.div`
 const NavigationWrapper = styled.div`
   position: absolute;
   top: 3vw;
+  z-index: 100;
   right: 3vw;
   ${
     media.tabletTablet`
@@ -44,10 +45,17 @@ const NavigationWrapper = styled.div`
   }
 `
 
+const links = [
+  { name: 'Github', url: 'https://github.com/CamdenKo' },
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/camden-ko-7202a2103/' },
+  { name: 'Medium', url: 'https://medium.com/@camdenko' },
+  { name: 'Resume', url: 'https://www.scribd.com/document/358913646/Camden-Ko-Resume' },
+]
+
 export default () => (
   <Container>
     <NavigationWrapper>
-      <Navigation />
+      <Navigation links={links} />
     </NavigationWrapper>
     <LeftHome />
     <RightHome />

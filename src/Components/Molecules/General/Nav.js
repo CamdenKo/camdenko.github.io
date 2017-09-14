@@ -30,19 +30,12 @@ const LineContainer = styled.div`
   padding-right: 10px;
 `
 
-const choices = [
-  'Projects',
-  'Experience',
-  'Education',
-  'Contact Me',
-]
-
-export default () => (
+export default props => (
   <NavBox>
     <Container>
       <TextContainer>
         {
-          choices.map(choice => <NavText>{choice}</NavText>)
+          props.links.map(link => <NavText href={link.url} >{link.name}</NavText>)
         }
       </TextContainer>
       <LineContainer>
