@@ -54,7 +54,11 @@ storiesOf('Atoms/Text', module)
 .add('Secondary Title active', () => <SecondaryTitle active>Camden Ko</SecondaryTitle>)
 .add('Secondary Title inactive', () => <SecondaryTitle>Camden Ko</SecondaryTitle>)
 .add('NavText active', () => <NavText active>Education</NavText>)
-.add('NavText inactive', () => <NavText>Education</NavText>)
+.add('NavText inactive', () => (
+  <div style={{ width: 'fit-content' }}>
+    <NavText>Education</NavText>
+  </div>
+))
 .add('Subsubtitle', () => (
   <div style={{ backgroundColor: 'black' }}>
     <Subsubtitle>React</Subsubtitle>
