@@ -8,12 +8,12 @@ const Link = styled.a`
 
 const loadAnimation = keyframes`
   from {
-    background-position: -100% 0;
+    background-position: 0;
     color: white;
   }
 
   to {
-    background-position: 0 0;
+    background-position: -100%;
     color: black;
   }
 `
@@ -23,8 +23,9 @@ export default (props) => {
 
   const Container = styled.p`
     color: ${({ theme }) => theme.black};
-    background-image: linear-gradient(to right, transparent 50.2%, ${({ theme }) => theme.black} 49.8%);
+    background-image: linear-gradient(to left, transparent 51%, black 49%);
     background-size: 200% 100%;
+    background-position: 100%;
     transition: background-position .5s, color .3s;
     font-size: 30px;
     font-weight: 200;
@@ -36,7 +37,7 @@ export default (props) => {
     animation-delay: ${delay}s;
 
     &:hover {
-      background-position: -100% 0;
+      background-position: 0;
       color: ${({ theme }) => theme.white};
     }
   `
