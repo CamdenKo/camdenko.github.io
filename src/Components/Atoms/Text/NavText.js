@@ -25,14 +25,14 @@ export default (props) => {
     color: ${({ theme }) => theme.black};
     background-image: linear-gradient(to right, transparent 50.2%, ${({ theme }) => theme.black} 49.8%);
     background-size: 200% 100%;
-    transition: background-position .6s, color .3s;
+    transition: background-position .5s, color .3s;
     font-size: 30px;
     font-weight: 200;
     font-family: Raleway;
     width: 100%;
     margin: 0;
     cursor: pointer;
-    animation ${loadAnimation} 1.3s ease-in;
+    animation ${loadAnimation} .8s ease-in;
     animation-delay: ${delay}s;
 
     &:hover {

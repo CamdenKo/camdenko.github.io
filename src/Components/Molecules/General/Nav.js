@@ -28,7 +28,7 @@ const LinePadding = Line.extend`
   margin-right: 20px;
 `
 
-const delayPer = 0.3
+const delayPer = 0.2
 
 export default props => (
   <Container>

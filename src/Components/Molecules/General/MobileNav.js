@@ -20,7 +20,7 @@ const NavTextWrapper = styled.div`
   padding-top: 11px;
 `
 
-const delayPer = 0.3
+const delayPer = 0.2
 
 export default props => (
   <Body>
