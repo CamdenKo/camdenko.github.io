@@ -22,7 +22,7 @@ export default (props) => {
   const delay = props.delay || 0
 
   const Container = styled.p`
-    color: ${({ theme }) => theme.black};
+    color: ${({ theme }) => theme.white};
     background-image: linear-gradient(to left, transparent 51%, black 49%);
     background-size: 200% 100%;
     background-position: 100%;
@@ -33,7 +33,7 @@ export default (props) => {
     width: 100%;
     margin: 0;
     cursor: pointer;
-    animation ${loadAnimation} .8s ease-in;
+    animation ${loadAnimation} .8s ease-in forwards;
     animation-delay: ${delay}s;
 
     &:hover {
