@@ -69,7 +69,7 @@ const ChatBubbleContainer = styled.div`
 const ChatText = BodyText.extend`
   color: ${({ theme }) => theme.black};
   text-align: center;
-  line-height: 20px;
+  line-height: 10px;
 `
 
 const SmallChatText = styled.small`

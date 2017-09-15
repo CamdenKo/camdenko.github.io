@@ -8,6 +8,7 @@ import {
   Disappearer,
   BigRotator,
 } from '../../../Components'
+import { media } from '../../../theme'
 
 const Container = styled.div`
   text-align: center;
@@ -30,7 +31,13 @@ const Developer = Subtitle.extend`
   animation: ${typing} ease 0.8s forwards;
   overflow: hidden;
   margin: 0 auto;
+  opacity: 0;
   white-space: nowrap;
+  ${
+    media.phoneTablet`
+      animation-delay: 1.0s;
+    `
+  }
 `
 
 const Stack = Subsubtitle.extend`
@@ -40,6 +47,11 @@ const Stack = Subsubtitle.extend`
   margin: 0 auto;
   white-space: nowrap;
   animation-delay: 0.32s;
+  ${
+    media.phoneTablet`
+      animation-delay: 1.32s;
+    `
+  }
 `
 
 export default () => (
