@@ -8,6 +8,7 @@ import {
   Circle,
   AbsolutePosition,
   Scaler,
+  BodyText,
   Disappearer,
   TextBubble,
 } from '../../../Components'
@@ -50,8 +51,25 @@ const ImageContainer = styled.div`
 const ChatBubbleContainer = styled.div`
   position: absolute;
   top: 0;
-  left: 300px;
+  left: 210px;
   width: 300px;
+  display: flex;
+  ${
+    media.tabletTablet`
+      display: none;
+    `
+  }
+  ${
+    media.phoneTablet`
+      display: inherit;
+    `
+  }
+`
+
+const ChatText = BodyText.extend`
+  color: ${({ theme }) => theme.black};
+  text-align: center;
+  line-height: 20px;
 `
 
 export default () => (
@@ -59,9 +77,11 @@ export default () => (
     <Container>
       <CircleWithLines>
         <ChatBubbleContainer>
-          <Scaler scale={0.5}>
-            <TextBubble>Designed with &hearts;<br /><small>please hire me.</small></TextBubble>
-          </Scaler>
+          <TextBubble>
+            <ChatText>
+              Designed with &hearts;<br /><small>(please hire me.)</small>
+            </ChatText>
+          </TextBubble>
         </ChatBubbleContainer>
         <ImageContainer>
           <HeadshotImage />
