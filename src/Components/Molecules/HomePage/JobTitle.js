@@ -17,18 +17,29 @@ const Container = styled.div`
 
 const typing = keyframes`
   from {
-    width: 0;
+    opacity: 0;
+    transform: translateX(-15px);
   }
   to {
-    width: 100%;
+    opacity: 1;
+    transform: translateX(0);
   }
 `
 
 const Developer = Subtitle.extend`
-  animation: ${typing} 3.5s steps(40,end) forwards;
+  animation: ${typing} ease 0.8s forwards;
   overflow: hidden;
   margin: 0 auto;
   white-space: nowrap;
+`
+
+const Stack = Subsubtitle.extend`
+  animation: ${typing} ease 0.6s forwards;
+  opacity: 0;
+  overflow: hidden;
+  margin: 0 auto;
+  white-space: nowrap;
+  animation-delay: 0.32s;
 `
 
 export default () => (
@@ -38,7 +49,7 @@ export default () => (
         <Title>Camden Ko</Title>
       </Disappearer>
       <Developer>Fullstack Developer</Developer>
-      <Subsubtitle>React · Express · Node.js</Subsubtitle>
+      <Stack>React · Express · Node.js</Stack>
     </BigRotator>
   </Container>
 )
