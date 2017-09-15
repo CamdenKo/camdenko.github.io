@@ -7,12 +7,13 @@ import {
   SecondaryTitle,
 } from '../../../Components'
 
-const Body = styled.div`
+const Body = NavBoxMobile.extend`
   padding: 17px 25px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 `
 
 const NavTextWrapper = styled.div`
@@ -20,14 +21,12 @@ const NavTextWrapper = styled.div`
 `
 
 export default props => (
-  <NavBoxMobile>
-    <Body>
-      <SecondaryTitle padding="0 10px" active>Camden Ko</SecondaryTitle>
-      <NavTextWrapper>
-        {
-          props.links.map(link => <NavText key={link.name} href={link.url}>{link.name}</NavText>)
-        }
-      </NavTextWrapper>
-    </Body>
-  </NavBoxMobile>
+  <Body>
+    <SecondaryTitle padding="0 10px" active>Camden Ko</SecondaryTitle>
+    <NavTextWrapper>
+      {
+        props.links.map(link => <NavText key={link.name} href={link.url}>{link.name}</NavText>)
+      }
+    </NavTextWrapper>
+  </Body>
 )

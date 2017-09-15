@@ -9,10 +9,8 @@ import {
   SecondaryTitle,
 } from '../../../Components'
 
-const Container = styled.div`
+const Container = NavBox.extend`
   display: flex;
-  width: 100%;
-  height: 100%;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -24,26 +22,22 @@ const TextContainer = styled.div`
   display: unset;
 `
 
-const LineContainer = styled.div`
+const LinePadding = Line.extend`
   height: 219px;
-  padding-left: 20px;
-  padding-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 `
 
 export default props => (
-  <NavBox>
-    <Container>
-      <TextContainer>
-        {
-          props.links.map(link => <NavText key={link.name} href={link.url} >{link.name}</NavText>)
-        }
-      </TextContainer>
-      <LineContainer>
-        <Line />
-      </LineContainer>
-      <TextRotator>
-        <SecondaryTitle active padding="10px 0">Camden Ko</SecondaryTitle>
-      </TextRotator>
-    </Container>
-  </NavBox>
+  <Container>
+    <TextContainer>
+      {
+        props.links.map(link => <NavText key={link.name} href={link.url}>{link.name}</NavText>)
+      }
+    </TextContainer>
+    <LinePadding />
+    <TextRotator>
+      <SecondaryTitle active padding="10px 0">Camden Ko</SecondaryTitle>
+    </TextRotator>
+  </Container>
 )
