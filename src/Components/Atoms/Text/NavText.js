@@ -8,13 +8,23 @@ const Link = styled.a`
 
 const loadAnimation = keyframes`
   from {
+    opacity: 0;
     background-position: 0;
-    color: white;
   }
 
   to {
+    opacity: 1;
     background-position: -100%;
-    color: black;
+  }
+`
+
+const opacity = keyframes`
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 `
 
@@ -22,7 +32,7 @@ export default (props) => {
   const delay = props.delay || 0
 
   const Container = styled.p`
-    color: ${({ theme }) => theme.white};
+    color: ${({ theme }) => theme.black};
     background-image: linear-gradient(to left, transparent 51%, black 49%);
     background-size: 200% 100%;
     background-position: 100%;
@@ -32,8 +42,9 @@ export default (props) => {
     font-family: Raleway;
     width: 100%;
     margin: 0;
+    opacity: 0;
     cursor: pointer;
-    animation ${loadAnimation} .8s ease-in forwards;
+    animation ${loadAnimation} .8s ease-in, ${opacity} .8s ease-in forwards;
     animation-delay: ${delay}s;
 
     &:hover {
