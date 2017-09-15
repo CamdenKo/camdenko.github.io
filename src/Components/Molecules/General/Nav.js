@@ -35,7 +35,7 @@ export default props => (
     <TextContainer>
       {
         props.links.map((link, index) =>
-          <NavText delay={index * delayPer} key={link.name} href={link.url}>{link.name}</NavText>)
+          <NavText delay={(index * delayPer) + (props.delay || 0)} key={link.name} href={link.url}>{link.name}</NavText>)
       }
     </TextContainer>
     <LinePadding />
