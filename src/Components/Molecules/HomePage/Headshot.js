@@ -72,6 +72,10 @@ const ChatText = BodyText.extend`
   line-height: 20px;
 `
 
+const SmallChatText = styled.small`
+  font-size: small;
+`
+
 export default () => (
   <ShapeContainer>
     <Container>
@@ -79,7 +83,9 @@ export default () => (
         <ChatBubbleContainer>
           <TextBubble>
             <ChatText>
-              Designed with &hearts;<br /><small>(please hire me.)</small>
+              Designed with <span role="img" aria-label="Heart">♥️</span>
+              <br />
+              <SmallChatText>(looking for work)</SmallChatText>
             </ChatText>
           </TextBubble>
         </ChatBubbleContainer>
