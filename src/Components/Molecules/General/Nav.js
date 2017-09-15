@@ -35,7 +35,7 @@ export default props => (
     <Container>
       <TextContainer>
         {
-          props.links.map(link => <NavText href={link.url} >{link.name}</NavText>)
+          props.links.map(link => <NavText key={link.name} href={link.url} >{link.name}</NavText>)
         }
       </TextContainer>
       <LineContainer>

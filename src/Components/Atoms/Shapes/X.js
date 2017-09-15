@@ -19,7 +19,7 @@ export default (props) => {
     transition: transform 1s;
 
     &:hover {
-      transform: rotate(${utilities.doubleRangeRandom(...randomRange1, ...randomRange2)}deg) translateX(${utilities.doubleRangeRandom(...randomRange1, ...randomRange2)}px);
+      transform: rotate(${utilities.doubleRangeRandom(...randomRange1, ...randomRange2)}deg) translateX(${utilities.doubleRangeRandom(...randomRange1, ...randomRange2)}px) translateY(${utilities.doubleRangeRandom(...randomRange1, ...randomRange2)}px);
     }
   `
 

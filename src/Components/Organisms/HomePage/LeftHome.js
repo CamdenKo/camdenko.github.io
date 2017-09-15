@@ -5,13 +5,8 @@ import {
   JobTitle,
   LeftBackground,
   Headshot,
-  X,
-  AbsolutePosition,
-  DisappearerH,
-  StaticRotator,
-  Disappearer,
 } from '../../../Components'
-import { media, mediaHeight } from '../../../theme'
+import { media, mediaHeight, animations } from '../../../theme'
 
 const FlexContainer = styled.div`
   padding: 60px 0 0;
@@ -23,6 +18,7 @@ const FlexContainer = styled.div`
   align-items: center;
   height: 100%;
   justify-content: space-between;
+  animation: ${animations.fadeInBottom} 2s ease-in-out;
   ${
     media.phoneTablet`
       padding: 0;
@@ -48,14 +44,5 @@ export default () => (
       </JobWrapper>
       <Headshot />
     </FlexContainer>
-    <Disappearer>
-      <DisappearerH>
-        <AbsolutePosition top="43vh" left="13vw">
-          <StaticRotator degrees={15}>
-            <X />
-          </StaticRotator>
-        </AbsolutePosition>
-      </DisappearerH>
-    </Disappearer>
   </LeftBackground>
 )

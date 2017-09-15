@@ -25,7 +25,7 @@ export default props => (
       <SecondaryTitle padding="0 10px" active>Camden Ko</SecondaryTitle>
       <NavTextWrapper>
         {
-          props.links.map(link => <NavText href={link.url}>{link.name}</NavText>)
+          props.links.map(link => <NavText key={link.name} href={link.url}>{link.name}</NavText>)
         }
       </NavTextWrapper>
     </Body>
