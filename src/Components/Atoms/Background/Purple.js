@@ -1,11 +1,10 @@
-import React from 'react'
 import styled from 'styled-components'
 
 import {
   media,
 } from '../../../theme'
 
-const Container = styled.div`
+export default styled.div`
   height: 100vh;
   background-color: ${({ theme }) => theme.purple};
   width: 97%;
@@ -17,9 +16,3 @@ const Container = styled.div`
     `
   }
 `
-
-export default props => (
-  <Container>
-    {props.children}
-  </Container>
-)

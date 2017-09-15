@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 
 export default (props) => {
-  const Container = styled.div`
+  const Container = styled.h6`
     background-color: ${props.active ? ({ theme }) => theme.black : 'transparent'};
     color: ${props.active ? ({ theme }) => theme.white : ({ theme }) => theme.black};
     font-family: ${({ theme }) => theme.primaryFontFamily};
@@ -13,6 +13,7 @@ export default (props) => {
     width: fit-content;
     overflow: hidden;
     white-space: nowrap;
+    margin: 0;
     ${props.onClick && 'cursor: pointer;'}
   `
 

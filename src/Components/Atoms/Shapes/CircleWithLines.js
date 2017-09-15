@@ -1,11 +1,10 @@
-import React from 'react'
 import styled from 'styled-components'
 
 import { media } from '../../../theme'
 
 const BoxSpacing = '30px'
 
-const Circle = styled.div`
+export default styled.div`
   height: 500px;
   width: 500px;
   background: linear-gradient(
@@ -40,8 +39,3 @@ const Circle = styled.div`
     `
   }
 `
-export default props => (
-  <Circle>
-    {props.children}
-  </Circle>
-)

@@ -7,15 +7,16 @@ const Link = styled.a`
 `
 
 export default (props) => {
-  const Container = styled.div`
+  const Container = styled.p`
     color: ${({ theme }) => props.active ? theme.white : theme.black};
-    background-image: linear-gradient(to right, transparent 50.1%, ${({ theme }) => theme.black} 49.9%);
+    background-image: linear-gradient(to right, transparent 50.2%, ${({ theme }) => theme.black} 49.8%);
     background-size: 200% 100%;
     transition: background-position .5s, color .2s;
     font-size: 30px;
     font-weight: 200;
     font-family: Raleway;
     width: 100%;
+    margin: 0;
     cursor: pointer;
 
     &:hover {
