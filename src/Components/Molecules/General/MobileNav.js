@@ -20,12 +20,14 @@ const NavTextWrapper = styled.div`
   padding-top: 11px;
 `
 
+const delayPer = 0.3
+
 export default props => (
   <Body>
     <SecondaryTitle padding="0 10px" active>Camden Ko</SecondaryTitle>
     <NavTextWrapper>
       {
-        props.links.map(link => <NavText key={link.name} href={link.url}>{link.name}</NavText>)
+        props.links.map((link, index) => <NavText delay={index * delayPer} key={link.name} href={link.url}>{link.name}</NavText>)
       }
     </NavTextWrapper>
   </Body>

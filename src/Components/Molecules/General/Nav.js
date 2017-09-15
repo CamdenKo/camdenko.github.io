@@ -28,11 +28,13 @@ const LinePadding = Line.extend`
   margin-right: 20px;
 `
 
+const delayPer = 0.3
+
 export default props => (
   <Container>
     <TextContainer>
       {
-        props.links.map(link => <NavText key={link.name} href={link.url}>{link.name}</NavText>)
+        props.links.map((link, index) => <NavText delay={index * delayPer} key={link.name} href={link.url}>{link.name}</NavText>)
       }
     </TextContainer>
     <LinePadding />
