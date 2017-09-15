@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 import {
   Subtitle,
@@ -15,13 +15,29 @@ const Container = styled.div`
   height: fit-content;
 `
 
+const typing = keyframes`
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+`
+
+const Developer = Subtitle.extend`
+  animation: ${typing} 3.5s steps(40,end) forwards;
+  overflow: hidden;
+  margin: 0 auto;
+  white-space: nowrap;
+`
+
 export default () => (
   <Container>
     <BigRotator degrees={-6}>
       <Disappearer>
         <Title>Camden Ko</Title>
       </Disappearer>
-      <Subtitle>Fullstack Developer</Subtitle>
+      <Developer>Fullstack Developer</Developer>
       <Subsubtitle>React · Express · Node.js</Subsubtitle>
     </BigRotator>
   </Container>
