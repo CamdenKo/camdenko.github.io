@@ -73,7 +73,7 @@ const ChatText = BodyText.extend`
 `
 
 const SmallChatText = styled.small`
-  font-size: small;
+  font-size: 8px;
 `
 
 export default () => (
@@ -84,8 +84,7 @@ export default () => (
           <TextBubble>
             <ChatText>
               Designed with <span role="img" aria-label="Heart">♥️</span>
-              <br />
-              <SmallChatText>(looking for work)</SmallChatText>
+              <SmallChatText><br />(pls hire me)</SmallChatText>
             </ChatText>
           </TextBubble>
         </ChatBubbleContainer>
