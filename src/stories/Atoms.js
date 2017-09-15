@@ -13,6 +13,7 @@ import {
   Subsubtitle,
   Subtitle,
   BodyText,
+  TextBubble,
   SecondaryTitle,
   NavText,
   Red,
@@ -38,6 +39,7 @@ storiesOf('Atoms/Shapes', module)
   </div>
 ))
 .add('NavBox', () => <NavBox />)
+.add('Bubble', () => <TextBubble />)
 
 storiesOf('Atoms/Text', module)
 .add('Title', () => <Title>Camden Ko</Title>)

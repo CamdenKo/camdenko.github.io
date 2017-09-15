@@ -9,6 +9,7 @@ import {
   AbsolutePosition,
   Scaler,
   Disappearer,
+  TextBubble,
 } from '../../../Components'
 import { media } from '../../../theme'
 
@@ -46,10 +47,22 @@ const ImageContainer = styled.div`
   height: 100%;
 `
 
+const ChatBubbleContainer = styled.div`
+  position: absolute;
+  top: 0;
+  left: 300px;
+  width: 300px;
+`
+
 export default () => (
   <ShapeContainer>
     <Container>
       <CircleWithLines>
+        <ChatBubbleContainer>
+          <Scaler scale={0.5}>
+            <TextBubble>Designed with &hearts;<br /><small>please hire me.</small></TextBubble>
+          </Scaler>
+        </ChatBubbleContainer>
         <ImageContainer>
           <HeadshotImage />
         </ImageContainer>

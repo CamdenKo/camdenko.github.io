@@ -1,9 +1,8 @@
-import React from 'react'
 import styled from 'styled-components'
 
 import { media, mediaHeight } from '../../../theme'
 
-const Container = styled.div`
+export default styled.div`
   text-align: left;
   font-size: 20px;
   font-family: Open Sans;
@@ -22,8 +21,3 @@ const Container = styled.div`
   }
 `
 
-export default props => (
-  <Container>
-    {props.children}
-  </Container>
-)

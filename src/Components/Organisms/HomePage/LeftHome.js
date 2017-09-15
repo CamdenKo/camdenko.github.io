@@ -6,7 +6,7 @@ import {
   LeftBackground,
   Headshot,
 } from '../../../Components'
-import { media, mediaHeight, animations } from '../../../theme'
+import { media, mediaHeight } from '../../../theme'
 
 const FlexContainer = styled.div`
   padding: 60px 0 0;
@@ -18,7 +18,6 @@ const FlexContainer = styled.div`
   align-items: center;
   height: 100%;
   justify-content: space-between;
-  animation: ${animations.fadeInBottom} 2s ease-in-out;
   ${
     media.phoneTablet`
       padding: 0;

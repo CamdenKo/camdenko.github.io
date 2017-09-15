@@ -1,7 +1,6 @@
-import React from 'react'
 import styled from 'styled-components'
 
-const Container = styled.div`
+export default styled.div`
   background-color: ${({ theme }) => theme.yellow};
   width: fit-content;
   font-family: ${({ theme }) => theme.primaryFontFamily};
@@ -11,9 +10,3 @@ const Container = styled.div`
   white-space: nowrap;
   oveflow: hidden;
 `
-
-export default props => (
-  <Container>
-    {props.children}
-  </Container>
-)

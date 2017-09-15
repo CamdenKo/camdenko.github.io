@@ -1,9 +1,8 @@
-import React from 'react'
 import styled from 'styled-components'
 
 import { media } from '../../../theme'
 
-const Text = styled.p`
+export default styled.p`
   font-size: 2.4vw;
   font-family: ${({ theme }) => theme.secondaryFontFamily};
   color: ${({ theme }) => theme.white};
@@ -15,9 +14,3 @@ const Text = styled.p`
     `
   }
 `
-
-export default props => (
-  <Text>
-    {props.children}
-  </Text>
-)
