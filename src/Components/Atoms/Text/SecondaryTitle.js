@@ -23,6 +23,14 @@ const loadAnimation = keyframes`
   }
 `
 
+const changeBackground = keyframes`
+  from {
+  }
+  to {
+    background-image: linear-gradient(to top, transparent 50%, black 50%);
+  }
+`
+
 export default (props) => {
   const delay = props.delay || 0
   const Container = styled.h6`
@@ -33,10 +41,10 @@ export default (props) => {
         animation ${loadAnimationM} 0.8s linear;
       `
     }
-    animation-fill-mode: forwards;
-    background-image: linear-gradient(to top, transparent 50.2%, black 49.8%);
+    // background-image: linear-gradient(to top, transparent 50.2%, black 49.8%);
     background-size: 100% 200%;
-    animation ${loadAnimation} 0.8s linear;
+    background-color: transparent;
+    animation ${loadAnimation} 0.8s linear forwards, ${changeBackground} 0.0000000001s linear forwards;
     animation-delay: ${delay}s;
     color: ${props.active ? ({ theme }) => theme.white : ({ theme }) => theme.black};
     font-family: ${({ theme }) => theme.primaryFontFamily};

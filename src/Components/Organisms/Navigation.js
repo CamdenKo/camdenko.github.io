@@ -6,7 +6,7 @@ import {
   DifferentComponents,
 } from '../../Components'
 
-const delayBig = 0.85
+const delayBig = 0.8
 const delaySmall = 0.3
 
 export default props => (
