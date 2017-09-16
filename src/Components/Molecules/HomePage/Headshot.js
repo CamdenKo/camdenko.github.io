@@ -85,10 +85,22 @@ const ChatBubbleContainer = styled.div`
   }
 `
 
+const chatAnimation = keyframes`
+  from {
+    transform: translateY(-15px);
+  }
+
+  to {
+    opacity: 1;
+  }
+`
+
 const ChatText = BodyText.extend`
   color: ${({ theme }) => theme.black};
   text-align: center;
   line-height: 10px;
+  opacity: 0;
+  animation: ${chatAnimation} .3s forwards 3.56s;
 `
 
 const SmallChatText = styled.small`
