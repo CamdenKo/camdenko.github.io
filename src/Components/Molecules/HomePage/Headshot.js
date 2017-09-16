@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 import {
   CircleWithLines,
@@ -15,7 +15,6 @@ import {
 import { media } from '../../../theme'
 
 const Container = styled.div`
-  overflow: hidden;
   width: fit-content;
   position: relative;
   height: 425px;
@@ -38,6 +37,26 @@ const Container = styled.div`
 
 const ShapeContainer = styled.div`
   position: relative;
+`
+
+const onLoadImageAnimation = keyframes`
+  from {
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+  }
+`
+
+const CircleBack = CircleWithLines.extend`
+  opacity: 0;
+  animation: ${onLoadImageAnimation} .5s ease-in-out forwards;
+  animation-delay: 2.9s;
+  ${
+    media.phoneTablet`
+      animation-delay: 1.5s
+    `
+  }
 `
 
 const ImageContainer = styled.div`
@@ -79,7 +98,7 @@ const SmallChatText = styled.small`
 export default () => (
   <ShapeContainer>
     <Container>
-      <CircleWithLines>
+      <CircleBack>
         <ChatBubbleContainer>
           <TextBubble>
             <ChatText>
@@ -91,7 +110,7 @@ export default () => (
         <ImageContainer>
           <HeadshotImage />
         </ImageContainer>
-      </CircleWithLines>
+      </CircleBack>
     </Container>
     <AbsolutePosition top={220} left={275}>
       <Scaler scale={0.8}>
