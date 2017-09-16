@@ -7,24 +7,29 @@ const Link = styled.a`
 `
 
 const loadAnimation = keyframes`
-  from {
-    opacity: 0;
+  0% {
+    backgr
     background-position: 0;
   }
 
   to {
-    opacity: 1;
     background-position: -100%;
   }
 `
 
 const opacity = keyframes`
-  from {
+  0% {
     opacity: 0;
   }
 
-  to {
+  100% {
     opacity: 1;
+  }
+`
+
+const noBackground = keyframes`
+  to {
+    background-image: none;
   }
 `
 
@@ -34,10 +39,11 @@ export default (props) => {
   const Container = styled.p`
     color: ${({ theme }) => theme.black};
     background-image: linear-gradient(to left, transparent 51%, black 49%);
-    background-size: 200% 100%;
+    background-size: 199.9% 100%;
     background-position: 100%;
     transition: background-position .5s, color .3s;
     font-size: 30px;
+    padding-right: 2px;
     font-weight: 200;
     font-family: Raleway;
     width: 100%;

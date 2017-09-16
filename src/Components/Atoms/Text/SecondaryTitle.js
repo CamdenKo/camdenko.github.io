@@ -41,7 +41,6 @@ export default (props) => {
         animation ${loadAnimationM} 0.8s linear;
       `
     }
-    // background-image: linear-gradient(to top, transparent 50.2%, black 49.8%);
     background-size: 100% 200%;
     background-color: transparent;
     animation ${loadAnimation} 0.8s linear forwards, ${changeBackground} 0.0000000001s linear forwards;
