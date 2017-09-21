@@ -55,11 +55,14 @@ export default class extends React.Component {
     this.state = {
       currentVideoIndex: 0,
     }
+    this.next = this.next.bind(this)
   }
 
 
   next() {
-    this.state.currentVideoIndex = (this.state.currentVideoIndex + 1) % this.props.videos.length
+    this.setState({
+      currentVideoIndex: (this.state.currentVideoIndex + 1) % this.props.videos.length,
+    })
   }
 
   render() {
@@ -74,7 +77,7 @@ export default class extends React.Component {
         <Name>
           {this.props.videos[this.state.currentVideoIndex].name}
         </Name>
-        <Next>
+        <Next onClick={this.next} >
           &gt;
         </Next>
       </Background>
