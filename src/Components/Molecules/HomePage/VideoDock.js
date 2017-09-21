@@ -5,6 +5,9 @@ import {
   Video,
   BodyText,
 } from '../../../Components'
+import {
+  media,
+} from '../../../theme'
 
 const videoW = 450
 const videoH = (videoW / 16) * 9
@@ -13,17 +16,26 @@ const backgroundW = 500
 
 const Background = styled.div`
   background-color: ${({ theme }) => theme.yellow};
-  height: 350px;
+  height: 335px;
   width: ${backgroundW}px;
   display: flex;
   justify-content: center;
   position: relative;
+  ${
+    media.phoneTablet`
+      width: 100%;
+    `
+  }
 `
 
 const VideoWrapper = styled.div`
-  width: ${videoW}px;
-  height: ${videoH}px;
-  margin-top: ${(backgroundW - videoW) / 2}px;
+  padding: 25px 25px 0px 25px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  // width: ${videoW}px;
+  // height: ${videoH}px;
+  // margin-top: ${(backgroundW - videoW) / 2}px;
 `
 
 const Name = BodyText.extend`
@@ -56,12 +68,18 @@ export default class extends React.Component {
       currentVideoIndex: 0,
     }
     this.next = this.next.bind(this)
+    this.previous = this.previous.bind(this)
   }
-
 
   next() {
     this.setState({
       currentVideoIndex: (this.state.currentVideoIndex + 1) % this.props.videos.length,
+    })
+  }
+
+  previous() {
+    this.setState({
+      currentVideoIndex: (this.state.currentVideoIndex - 1) < 0 ? this.props.videos.length - 1 : this.state.currentVideoIndex - 1,
     })
   }
 
@@ -71,7 +89,7 @@ export default class extends React.Component {
         <VideoWrapper>
           <Video src={this.props.videos[this.state.currentVideoIndex].src} />
         </VideoWrapper>
-        <Last>
+        <Last onClick={this.previous}>
           &lt;
         </Last>
         <Name>
