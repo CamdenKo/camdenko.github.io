@@ -18,6 +18,6 @@ const Video = styled.iframe`
 
 export default props => (
   <VideoWrapper>
-    <Video src={props.src} allowFullScreen />
+    <Video src={props.src} allowFullScreen frameBorder="0" />
   </VideoWrapper>
 )

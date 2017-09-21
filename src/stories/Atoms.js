@@ -21,6 +21,7 @@ import {
   Purple,
   PurpleTriangle,
   HeadshotImage,
+  Video,
 } from '../Components'
 import theme from '../theme'
 
@@ -84,3 +85,6 @@ storiesOf('Atoms/Background', module)
 
 storiesOf('Atoms/Assets', module)
 .add('Headshot', () => <HeadshotImage />)
+.add('Video', () => (<div style={{ width: '320px' }}>
+  <Video src="https://www.youtube.com/embed/t-PPgiLmaoo?rel=0%22" />
+</div>))
