@@ -49,9 +49,9 @@ const onLoadImageAnimation = keyframes`
 `
 
 const CircleBack = CircleWithLines.extend`
-  opacity: 0;
-  animation: ${onLoadImageAnimation} .5s ease-in-out forwards;
-  animation-delay: 2.9s;
+  // opacity: 0;
+  // animation: ${onLoadImageAnimation} .5s ease-in-out forwards;
+  // animation-delay: 2.9s;
   ${
     media.phoneTablet`
       animation-delay: 1.5s
@@ -89,11 +89,16 @@ const ChatBubbleContainer = styled.div`
 const ChatText = BodyText.extend`
   color: ${({ theme }) => theme.black};
   text-align: center;
-  line-height: 10px;
+  line-height: 15px;
 `
 
 const SmallChatText = styled.small`
-  font-size: 8px;
+  font-size: 11px;
+`
+
+const Link = styled.span`
+  color: ${({ theme }) => theme.red};
+  cursor: pointer;
 `
 
 export default () => (
@@ -104,7 +109,10 @@ export default () => (
           <TextBubble>
             <ChatText>
               Designed with <span role="img" aria-label="Heart">♥️</span>
-              <SmallChatText><br />(pls hire me)</SmallChatText>
+              <br />
+              <SmallChatText>
+                Click <Link> here </Link> for my videos
+              </SmallChatText>
             </ChatText>
           </TextBubble>
         </ChatBubbleContainer>
