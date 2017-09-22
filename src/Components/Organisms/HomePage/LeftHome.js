@@ -35,13 +35,13 @@ const JobWrapper = styled.div`
   padding: 10px 0 45px;
 `
 
-export default () => (
+export default props => (
   <LeftBackground>
     <FlexContainer>
       <JobWrapper>
         <JobTitle />
       </JobWrapper>
-      <Headshot />
+      <Headshot videos={props.videos} />
     </FlexContainer>
   </LeftBackground>
 )

@@ -11,6 +11,7 @@ import {
   BodyText,
   Disappearer,
   TextBubble,
+  VideoDock,
 } from '../../../Components'
 import { media } from '../../../theme'
 
@@ -85,7 +86,6 @@ const ChatBubbleContainer = styled.div`
   }
 `
 
-
 const ChatText = BodyText.extend`
   color: ${({ theme }) => theme.black};
   text-align: center;
@@ -96,47 +96,79 @@ const SmallChatText = styled.small`
   font-size: 11px;
 `
 
-const Link = styled.span`
+const Link = styled.a`
   color: ${({ theme }) => theme.red};
   cursor: pointer;
 `
 
-export default () => (
-  <ShapeContainer>
-    <Container>
-      <CircleBack>
-        <ChatBubbleContainer>
-          <TextBubble>
-            <ChatText>
-              Designed with <span role="img" aria-label="Heart">♥️</span>
-              <br />
-              <SmallChatText>
-                Click <Link> here </Link> for my videos
-              </SmallChatText>
-            </ChatText>
-          </TextBubble>
-        </ChatBubbleContainer>
-        <ImageContainer>
-          <HeadshotImage />
-        </ImageContainer>
-      </CircleBack>
-    </Container>
-    <AbsolutePosition top={220} left={275}>
-      <Scaler scale={0.8}>
-        <X />
-      </Scaler>
-    </AbsolutePosition>
-    <AbsolutePosition top={160} left={0}>
-      <Scaler scale={1.2}>
-        <Circle />
-      </Scaler>
-    </AbsolutePosition>
-    <Disappearer>
-      <AbsolutePosition top={320} left={420}>
-        <Scaler scale={0.9}>
-          <X />
-        </Scaler>
-      </AbsolutePosition>
-    </Disappearer>
-  </ShapeContainer>
-)
+const FlexContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+export default class extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      headshotVisible: true,
+    }
+    this.toggleHeadshot = this.toggleHeadshot.bind(this)
+  }
+
+  toggleHeadshot() {
+    this.setState({ headshotVisible: !this.state.headshotVisible })
+  }
+
+  render() {
+    return (
+      <ShapeContainer>
+        <Container>
+          <CircleBack>
+            {
+              this.state.headshotVisible ? (
+                <ImageContainer>
+                  <ChatBubbleContainer>
+                    <TextBubble>
+                      <ChatText>
+                      Designed with <span role="img" aria-label="Heart">♥️</span>
+                        <br />
+                        <SmallChatText>
+                        Click <Link onClick={this.toggleHeadshot}> here </Link> for my videos
+                        </SmallChatText>
+                      </ChatText>
+                    </TextBubble>
+                  </ChatBubbleContainer>
+                  <HeadshotImage />
+                </ImageContainer>
+              ) : (
+                <FlexContainer>
+                  <VideoDock videos={this.props.videos} />
+                </FlexContainer>
+              )
+            }
+          </CircleBack>
+        </Container>
+        <AbsolutePosition top={220} left={275}>
+          <Scaler scale={0.8}>
+            <X />
+          </Scaler>
+        </AbsolutePosition>
+        <AbsolutePosition top={160} left={0}>
+          <Scaler scale={1.2}>
+            <Circle />
+          </Scaler>
+        </AbsolutePosition>
+        <Disappearer>
+          <AbsolutePosition top={320} left={420}>
+            <Scaler scale={0.9}>
+              <X />
+            </Scaler>
+          </AbsolutePosition>
+        </Disappearer>
+      </ShapeContainer>
+    )
+  }
+}

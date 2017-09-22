@@ -9,33 +9,39 @@ import {
   media,
 } from '../../../theme'
 
-const videoW = 450
-const videoH = (videoW / 16) * 9
-
-const backgroundW = 500
-
 const Background = styled.div`
   background-color: ${({ theme }) => theme.yellow};
-  height: 335px;
-  width: ${backgroundW}px;
+  height: 295px;
+  width: 400px;
+  z-index: 300;
   display: flex;
   justify-content: center;
   position: relative;
   ${
     media.phoneTablet`
-      width: 100%;
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+    `
+  }
+  ${
+    media.phonePhone`
+      width: 100vw;
+      height: 225px;
     `
   }
 `
 
 const VideoWrapper = styled.div`
-  padding: 25px 25px 0px 25px;
+  // padding: 25px 25px 0px 25px;
+  ${
+    media.phonePhone`
+      width: 100vw;
+    `
+  }
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  // width: ${videoW}px;
-  // height: ${videoH}px;
-  // margin-top: ${(backgroundW - videoW) / 2}px;
 `
 
 const Name = BodyText.extend`

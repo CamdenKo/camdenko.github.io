@@ -52,12 +52,17 @@ const links = [
   { name: 'Resume', url: 'https://www.scribd.com/document/358913646/Camden-Ko-Resume' },
 ]
 
+const videos = [
+  { name: '.io Server Architecture', src: 'https://www.youtube.com/embed/t-PPgiLmaoo?rel=0%22' },
+  { name: 'Summary Bot Webapp', src: 'https://www.youtube.com/embed/NFL1BhXze_4?rel=0%22' },
+]
+
 export default () => (
   <Container>
     <NavigationWrapper>
       <Navigation links={links} />
     </NavigationWrapper>
-    <LeftHome />
+    <LeftHome videos={videos} />
     <RightHome />
   </Container>
 )

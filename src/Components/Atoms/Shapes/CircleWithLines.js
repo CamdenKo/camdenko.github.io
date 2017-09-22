@@ -16,7 +16,7 @@ export default styled.div`
   );
   display: flex;
   border-radius: 500px;
-  overflow: hidden;
+  // overflow: hidden;
   padding-top: ${BoxSpacing};
   box-sizing: border-box;
   background-size: 100% 50px;
