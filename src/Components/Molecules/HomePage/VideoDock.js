@@ -13,7 +13,7 @@ const Background = styled.div`
   background-color: ${({ theme }) => theme.yellow};
   height: 295px;
   width: 400px;
-  z-index: 300;
+  z-index: 400;
   display: flex;
   justify-content: center;
   position: relative;
