@@ -9,7 +9,7 @@ import {
   media,
 } from '../../../theme'
 
-const Background = styled.div`
+const Background = styled.article`
   background-color: ${({ theme }) => theme.yellow};
   height: 295px;
   width: 400px;
