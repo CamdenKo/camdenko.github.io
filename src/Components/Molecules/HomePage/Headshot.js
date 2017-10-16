@@ -56,7 +56,7 @@ const CircleBack = CircleWithLines.extend`
   animation-delay: 1.6s;
   ${
     media.phoneTablet`
-      animation-delay: 1.5s
+      animation-delay: 1.4s
     `
   }
 `
