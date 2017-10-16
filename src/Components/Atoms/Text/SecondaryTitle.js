@@ -43,7 +43,7 @@ export default (props) => {
     }
     background-size: 100% 200%;
     background-color: transparent;
-    animation ${loadAnimation} 0.8s linear forwards, ${changeBackground} 0.0000000001s linear forwards;
+    animation ${loadAnimation} 0.4s linear forwards, ${changeBackground} 0.0000000001s linear forwards;
     animation-delay: ${delay}s;
     color: ${props.active ? ({ theme }) => theme.white : ({ theme }) => theme.black};
     font-family: ${({ theme }) => theme.primaryFontFamily};

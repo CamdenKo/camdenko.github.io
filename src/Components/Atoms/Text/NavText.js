@@ -44,7 +44,7 @@ export default (props) => {
     margin: 0;
     opacity: 0;
     cursor: pointer;
-    animation ${loadAnimation} .8s ease-in, ${opacity} .8s ease-in forwards;
+    animation ${loadAnimation} .5s ease-in, ${opacity} .5s ease-in forwards;
     animation-delay: ${delay}s;
 
     &:hover {

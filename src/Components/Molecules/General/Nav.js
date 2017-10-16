@@ -33,18 +33,18 @@ to {
 }
 `
 
-const delayPer = 0.2
+const delayPer = 0.15
 
 
 export default (props) => {
-  const lineDelay = 0.55
-  const navTextDelay = 0.45
+  const lineDelay = 0.3
+  const navTextDelay = 0.15
 
   const LinePadding = Line.extend`
     height: 219px;
     margin-left: 20px;
     margin-right: 20px;
-    animation ${initialGrowthLine} cubic-bezier(.785, .135, .15, .86) 0.5s forwards;
+    animation ${initialGrowthLine} cubic-bezier(.785, .135, .15, .86) 0.3s forwards;
     animation-delay: ${props.delay + lineDelay}s;
     transform: scaleY(0);
   `

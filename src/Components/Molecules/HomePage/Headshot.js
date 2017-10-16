@@ -52,8 +52,8 @@ const onLoadImageAnimation = keyframes`
 
 const CircleBack = CircleWithLines.extend`
   opacity: 0;
-  animation: ${onLoadImageAnimation} .5s ease-in-out forwards;
-  animation-delay: 2.9s;
+  animation: ${onLoadImageAnimation} .45s ease-in-out forwards;
+  animation-delay: 1.6s;
   ${
     media.phoneTablet`
       animation-delay: 1.5s

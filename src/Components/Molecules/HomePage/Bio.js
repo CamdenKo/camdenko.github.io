@@ -22,7 +22,7 @@ const Bio = BodyText.extend`
   box-sizing: border-box;
   opacity: 0;
   animation: ${bioAnimation} .3s ease forwards;
-  animation-delay: 3.56s;
+  animation-delay: 2s;
   ${
     media.phoneTablet`
       animation-delay: 1.8s;
