@@ -8,7 +8,7 @@ import {
 } from '../Components'
 import { media, mediaHeight } from '../theme'
 
-const Container = styled.div`
+const Container = styled.main`
   display: flex;
   width: 100%;
   ${
@@ -18,7 +18,7 @@ const Container = styled.div`
   }
 `
 
-const NavigationWrapper = styled.div`
+const NavigationWrapper = styled.nav`
   position: absolute;
   top: 3vw;
   z-index: 100;

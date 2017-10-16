@@ -16,7 +16,7 @@ const bioAnimation = keyframes`
   }
 `
 
-const Container = styled.div`
+const Bio = BodyText.extend`
   max-width: 420px;
   padding: 0 35px;
   box-sizing: border-box;
@@ -31,9 +31,9 @@ const Container = styled.div`
 `
 
 export default () => (
-  <Container>
-    <BodyText>Born and raised in Aurora
+  <Bio>
+    Born and raised in Aurora
     IL. Versed in the dark arts
-    of web development. Teaching fellow @ Fullstack Academy. Hip-hop, React, Medium.com</BodyText>
-  </Container>
+    of web development. Teaching fellow @ Fullstack Academy. Hip-hop, React, Medium.com
+  </Bio>
 )

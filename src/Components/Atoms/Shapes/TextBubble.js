@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 
-export default styled.div`
+export default styled.menu`
   position: relative;
   width: 180px;
   height: 100px;
   text-align: center;
   display: flex;
+  padding: 0;
   justify-content: center;
   align-items: center;
   background-color: ${({ theme }) => theme.white};

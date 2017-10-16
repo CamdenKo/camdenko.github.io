@@ -15,10 +15,11 @@ import {
 } from '../../../Components'
 import { media } from '../../../theme'
 
-const Container = styled.div`
+const Container = styled.figure`
   width: fit-content;
   position: relative;
   height: 425px;
+  margin: 0;
   ${
     media.tabletDesktop`
       height: 400px;

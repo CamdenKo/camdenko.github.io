@@ -27,16 +27,10 @@ const opacity = keyframes`
   }
 `
 
-const noBackground = keyframes`
-  to {
-    background-image: none;
-  }
-`
-
 export default (props) => {
   const delay = props.delay || 0
 
-  const Container = styled.p`
+  const Container = styled.li`
     color: ${({ theme }) => theme.black};
     background-image: linear-gradient(to left, transparent 51%, black 49%);
     background-size: 199.9% 100%;

@@ -16,7 +16,7 @@ import {
 } from '../../../Components'
 import { media, mediaHeight } from '../../../theme'
 
-const FlexContainer = styled.div`
+const FlexContainer = styled.section`
   position: relative;
   width: 100%;
   height: 100%;

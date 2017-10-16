@@ -7,7 +7,7 @@ import {
   Disappearer,
 } from '../../../Components'
 
-const Container = styled.div`
+const Container = styled.section`
   width: 100%;
 `
 

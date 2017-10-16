@@ -16,8 +16,10 @@ const Body = NavBoxMobile.extend`
   box-sizing: border-box;
 `
 
-const NavTextWrapper = styled.div`
+const NavTextWrapper = styled.ul`
   padding-top: 11px;
+  list-style-type: none;
+  padding: 0;
 `
 
 const delayPer = 0.2

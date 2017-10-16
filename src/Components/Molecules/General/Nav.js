@@ -16,9 +16,11 @@ const Container = NavBox.extend`
   justify-content: center;
 `
 
-const TextContainer = styled.div`
+const TextContainer = styled.ul`
+  list-style-type: none;
   text-align: right;
   line-height: 61px;
+  padding: 0;
   display: unset;
 `
 

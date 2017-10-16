@@ -8,7 +8,7 @@ import {
 } from '../../../Components'
 import { media, mediaHeight } from '../../../theme'
 
-const FlexContainer = styled.div`
+const FlexContainer = styled.section`
   padding: 60px 0 0;
   display: flex;
   flex-direction: column;

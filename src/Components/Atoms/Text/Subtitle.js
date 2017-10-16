@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 import { media } from '../../../theme'
 
-export default styled.h6`
+export default styled.h3`
   font-size: 3.5vw;
   color: ${({ theme }) => theme.white};
   font-family: ${({ theme }) => theme.secondaryFontFamily};

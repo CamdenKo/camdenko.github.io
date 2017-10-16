@@ -10,7 +10,7 @@ import {
 } from '../../../Components'
 import { media } from '../../../theme'
 
-const Container = styled.div`
+const Container = styled.hgroup`
   text-align: center;
   width: fit-content;
   height: fit-content;
