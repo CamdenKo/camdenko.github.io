@@ -33,7 +33,7 @@ const Bio = BodyText.extend`
 export default () => (
   <Bio>
     Born and raised in Aurora
-    IL. Versed in the dark arts
+    IL. Versed in the arts
     of web development. Teaching fellow @ Fullstack Academy. Hip-hop, React, Medium.com
   </Bio>
 )
