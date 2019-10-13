@@ -60,8 +60,8 @@ export default () => (
       <Disappearer>
         <Title>Camden Ko</Title>
       </Disappearer>
-      <Developer>Fullstack Developer</Developer>
-      <Stack>React · Express · Node.js</Stack>
+      <Developer>Senior @ Vanderbilt</Developer>
+      <Stack>Trading · SWE · PM</Stack>
     </BigRotator>
   </Container>
 )

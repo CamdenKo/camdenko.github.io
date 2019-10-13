@@ -137,7 +137,8 @@ export default class extends React.Component {
                       Designed with <span role="img" aria-label="Heart">♥️</span>
                         <br />
                         <SmallChatText>
-                        Click <Link onClick={this.toggleHeadshot}> here </Link> for my videos
+                        {/* Click <Link onClick={this.toggleHeadshot}> here </Link> for my videos */}
+                        Click <Link href="https://medium.com/@camdenko/quant-trader-intern-interview-guide-for-beginners-pt-1-background-2c8442bbfccf">here</Link> for a guide on trading
                         </SmallChatText>
                       </ChatText>
                     </TextBubble>

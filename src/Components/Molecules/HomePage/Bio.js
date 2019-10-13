@@ -32,8 +32,6 @@ const Bio = BodyText.extend`
 
 export default () => (
   <Bio>
-    Born and raised in Aurora
-    IL. Versed in the arts
-    of web development. Teaching fellow @ Fullstack Academy. Hip-hop, React, Medium.com
+    Born and raised in Aurora, IL. Interested in problem solving, mathematics, philosophy, and discovering how many licks it takes to get to the center of a Tootsie Pop. Feel free to reach out with opportunities.
   </Bio>
 )
