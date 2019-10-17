@@ -38,6 +38,7 @@ export default (props) => {
     background-size: 202% 100%;
     background-position: 100%;
     transition: background-position .5s, color .3s;
+    -webkit-transition: background-position .5s, color .3s;
     font-size: 30px;
     font-weight: 200;
     font-family: Raleway;

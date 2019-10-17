@@ -17,9 +17,10 @@ const Body = NavBoxMobile.extend`
 `
 
 const NavTextWrapper = styled.ul`
+  padding: 0px;
   padding-top: 11px;
   list-style-type: none;
-  padding: 0;
+  padding-right: 25px;
 `
 
 const delayPer = 0.2

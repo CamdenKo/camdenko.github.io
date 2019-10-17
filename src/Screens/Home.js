@@ -36,13 +36,6 @@ const NavigationWrapper = styled.nav`
       transform: scale(1.0);
     `
   }
-  ${
-    mediaHeight.phoneTablet`
-      top: -13vh;
-      right: -8vw;
-      transform: scale(0.5);
-    `
-  }
 `
 
 const links = [
