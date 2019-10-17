@@ -33,7 +33,7 @@ export default (props) => {
   const Container = styled.li`
     color: ${({ theme }) => theme.black};
     background-image: linear-gradient(to left, transparent 51%, black 49%);
-    background-size: 199.9% 100%;
+    background-size: 202% 100%;
     background-position: 100%;
     transition: background-position .5s, color .3s;
     font-size: 30px;
