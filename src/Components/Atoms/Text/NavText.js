@@ -37,7 +37,7 @@ export default (props) => {
     background-position: 100%;
     transition: background-position .5s, color .3s;
     font-size: 30px;
-    padding-right: 2px;
+    padding-right: 17px;
     font-weight: 200;
     font-family: Raleway;
     width: 100%;

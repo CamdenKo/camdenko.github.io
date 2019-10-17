@@ -42,7 +42,7 @@ export default (props) => {
 
   const LinePadding = Line.extend`
     height: 219px;
-    margin-left: 20px;
+    margin-left: 26px;
     margin-right: 20px;
     animation ${initialGrowthLine} cubic-bezier(.785, .135, .15, .86) 0.3s forwards;
     animation-delay: ${props.delay + lineDelay}s;

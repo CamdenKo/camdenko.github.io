@@ -7,4 +7,6 @@ export default styled.div`
   width: 5px;
   box-shadow: 5px 0 0 0 ${({ theme }) => theme.black};
   border-radius: 10px;
+  margin-left: 26px;
+  margin-right: 18px;
 `
