@@ -1,6 +1,8 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
 
+import { media } from '../../../theme'
+
 const Link = styled.a`
   text-decoration: none;
   color: inherit;
@@ -37,7 +39,6 @@ export default (props) => {
     background-position: 100%;
     transition: background-position .5s, color .3s;
     font-size: 30px;
-    padding-right: 17px;
     font-weight: 200;
     font-family: Raleway;
     width: 100%;
@@ -46,6 +47,13 @@ export default (props) => {
     cursor: pointer;
     animation ${loadAnimation} .5s ease-in, ${opacity} .5s ease-in forwards;
     animation-delay: ${delay}s;
+    padding-right: 17px;
+    ${
+      media.phoneTablet`
+        padding-right: 10px;
+        padding-left: 10px;
+      `
+    }
 
     &:hover {
       background-position: 0;
